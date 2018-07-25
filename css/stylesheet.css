@@ -11,17 +11,6 @@ header {
 #wrapper-content {
 	width: 100%;
 }
-.homepage {
-	margin-top: .5em;
-	font-size: 5em;
-	font-weight: 900;
-	color: #2C325A;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
-}
-.submit:hover {
-	text-decoration: none;
-	color: white;
-}
 .menuDisplayed #nav-wrapper {
 	width: 225px;
 	padding-right: 4%;
