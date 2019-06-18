@@ -1,155 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amelia Shuler Portfolio</title>
+    <!-- custom -->
+<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+<link rel="icon" type="image/png" href="assets/header/logo-copy.png">
+<script src="js/custom.js"></script> 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-  <title>Amelia Shuler</title>
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110563305-2"></script>
+<!-- analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142298355-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-110563305-2');
-</script>
+  gtag('config', 'UA-142298355-1');
+</script>  
 
-    <script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
+    <!--bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--font awesome-->
+<script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-a11y="true"></script>
+</head>
+<body class="bg-home">
+<main role="main" class="container inner-home">
+<div class="row col-12 justify-content-center d-none d-sm-inline-flex fixed-bottom" style="bottom: 10%;">
+    <a href="#projects" onclick="this.style.visibility='hidden'" id="button-home">
+    <i class="fas fa-chevron-down"></i>
+    </a>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="row col-12">
+        <div class="row col-12 col-sm-6 d-inline-flex align-content-center no-gutters">
+            <div class="row col-12 no-gutters d-inline-flex justify-content-start align-content-center">
+            <div class="col-9 text-center" style="background-color: #3c3c3a;">
+            <p class="home-text">Amelia</p>
+            </div>
+            </div>
+            <div class="row col-12 no-gutters d-inline-flex justify-content-end align-content-center">
+            <div class="col-9 text-center" style="background-color: #3c3c3a;">
+            <p class="home-text">Shuler</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 d-none d-sm-inline-flex">
+            <a href="aboutme.html">
+            <img src="assets/header/header.png" alt="Amelia Shuler self-portrait" height="100%" width="100%">
+            </a>
+        </div>
+    </div>
+</div>
+</main>
+<main class="container">
+<div id="projects" class="mt-5 mb-5">
+    <p class="col-12 carahsoft-text text-uppercase">
+    Projects
+    </p>
+<div class="d-flex justify-content-center row col-12 mt-3 no-gutters mh-100 m-5">
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="flatfitapp.html">
+        <img src="assets/header/homepage-previewflatfit.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="cybersmartseries.html">
+        <img src="assets/header/homepage-previewcybersmart.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-    </script>
-  </head>
-  <body onLoad="MM_preloadImages('assets/logo-hover.png','assets/personal/logo-hover.png')">
-	  <div id="wrapper">
-	  		<div id="nav-wrapper">
-			<ul class="nav-box">
-				<li class="nav-item">
-					<a href="uxdesign.html">
-						UX DESIGN
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="marketing.html">
-						MARKETING
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="print.html">
-						PRINT
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="otherskills.html">
-						OTHER SKILLS
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="about.html">
-						ABOUT
-					</a>
-				</li>
-			</ul>
-	  </div><!--nav-->
-	  <div id="wrapper-content">
-		  	<a href="#" id="toggle-nav" class="button-nav pl-3">
- 			  <div id="bar1"></div>
-			  <div id="bar2"></div>
-			  <div id="bar3"></div>
-			</a><!--button for js-->
-		<header class="row no-gutters pt-sm-3 pb-sm-3 justify-content-center">
-			<div>
-			<a href="index.html">
-			<img src="assets/personal/logo-copy.png" alt="amelia shuler" class="col-md-1 home" id="thisone" onMouseOver="MM_swapImage('thisone','','assets/personal/logo-hover.png',1)" onMouseOut="MM_swapImgRestore()">
-			</a>
-			</div><!-- home button-->
-		</header>
-		 <div class="row m-5"></div>
-		  		 <div class="row m-5 p-3"></div>
-		<div class="row col-12 justify-content-around align-items-center">
-			<div class="row col-4 position-fixed align-items-center ml-2">
-			<img src="assets/personal/flowers.png" alt="flowers" id="animate">
-			</div>
-			<div class="row col-4 position-relative align-items-center">
-		  <img src="assets/personal/creative.png" alt="creative" class="w-100">
-			</div>
-		  </div>
-		<footer class="row fixed-bottom justify-content-center align-middle pb-1" style="background: rgba(255, 255, 255, 0.4); margin-top: 20px; max-height: 70px;">
-			<div class="col-md-2 text-center align-self-md-center">Amelia Shuler &copy; 2018 </div>
-			<div class="row border-left border-dark">
-				<div class="col-xs-1 ml-2">
-					<a href="https://www.linkedin.com/in/ameliashuler/">
-						<img class="media" src="assets/personal/linkedin.png" alt="linkedin">
-					</a>
-				</div> <!-- linkedin -->
-				<div class="col-xs-1">
-					<a href="https://www.facebook.com/ameliashuler/">
-						<img class="media" src="assets/personal/facebook.png" alt="facebook">
-					</a>
-				</div> <!-- facebook -->
-				<div class="col-xs-1">
-					<a href="https://www.pinterest.com/abshu">
-						<img class="media" src="assets/personal/pinterest.png" alt="pinterest">
-					</a>
-				</div> <!-- pinterest -->
-				<div class="col-xs-1">
-					<a href="https://www.etsy.com/shop/ameliashuler">
-						<img class="media" src="assets/personal/etsy.png" alt="etsy">
-					</a>
-				</div> <!-- etsy -->
-				<div class="col-xs-1">
-					<a href="tel:1-703-629-8979" data-toggle="tooltip" data-placement="top" title="+17036298979">
-						<img class="media" src="assets/personal/phone.png" alt="phone">
-					</a>
-				</div> <!-- phone -->
-				<div class="col-xs-1">
-					<a href="mailto:amelia@ameliashuler.com" data-toggle="tooltip" data-placement="top" title="amelia@ameliashuler.com">
-						<img class="media" src="assets/personal/email.png" alt="email">
-					</a>
-				</div> <!-- email-->
-			</div><!-- social media -->
-		</footer>
-	  </div> <!--content-wrapper-->
-  </div> <!--wrapper-->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> // preload images
-          function MM_preloadImages() { //v3.0
-              var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-              var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-              if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-          }
-    </script>
-  <script> // tooltips
-		$(document).ready(function(){
-			$('[data-toggle="tooltip"]').tooltip(); 
-		});
-	</script>
-  <script> // side bar
-		$("#toggle-nav").click( function(e){
-			e.preventDefault();
-			$("#bar1, #bar2, #bar3, #wrapper-content, #wrapper").toggleClass("menuDisplayed");
-		});
-	</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<!--
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="cumminswebsite.html">
+        <img src="assets/header/homepage-previewcummins.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="flatfitapp.html">
+        <img src="assets/header/homepage-previewruckus.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="cybersmartseries.html">
+        <img src="assets/header/homepage-previewgrant-thornton.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="cumminswebsite.html">
+        <img src="assets/header/homepage-previewaccelerated-ai.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    -->
+    <!--
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="flatfitapp.html">
+        <img src="assets/header/homepage-previewaccenture.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="cybersmartseries.html">
+        <img src="assets/header/homepage-previewverizon.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    <div class="col-5 col-sm-3 no-gutters m-2">
+        <a href="cumminswebsite.html">
+        <img src="assets/header/homepage-previewgoogle-cloud.jpg" alt="Flatfit" class="mw-100 home-preview">
+        </a>
+    </div>
+    -->
+</div>
+<div class="d-flex justify-content-around row col-12 mt-3 no-gutters">
+</div>
+<div class="d-flex justify-content-around row col-12 mt-3 no-gutters">
+</div>
+</div>
+</main>
 </body>
 </html>
