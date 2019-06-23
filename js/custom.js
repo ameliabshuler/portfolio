@@ -17,6 +17,7 @@ function preload() {
 //-- usage --//
 preload(
     "assets/header/logo-copy.png",
+    "assets/header/header.png",
     "assets/carahsoft/carahsoft-homepagecover.jpg",
     "assets/carahsoft/carahsoft_eventoverviewbrandingoption1_061019.png",
     "assets/carahsoft/carahsoft_individualeventbrandingoption1_061019.jpg",
