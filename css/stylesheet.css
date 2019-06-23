@@ -40,7 +40,7 @@ html {
     font-weight: 900;
 }
 .carahsoft-title {
-    color: #EA961E;
+    color: #3c3c3a;
     font-size: 2.5em;
     text-align: center;
     font-family: futura, sansserif;
@@ -58,7 +58,7 @@ html {
 }
 .cummins-title {
     color: #3c3c3a;
-    font-size: 2.4em;
+    font-size: 2.8em;
     text-transform: uppercase;
     text-align: center;
     font-family: futura, sansserif;
@@ -103,9 +103,7 @@ html {
 .flatfit-blue {
     color: #1DA2CA;
 }
-.flatfitSlides1, .flatfitSlides2 {
-    display: none;
-}
+
 .bg-home {
     background-image: radial-gradient(circle, #FFC318, #EA961E);
     background-attachment: fixed;

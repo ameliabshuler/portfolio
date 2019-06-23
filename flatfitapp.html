@@ -18,12 +18,15 @@
 
   gtag('config', 'UA-142298355-1');
 </script>    
-
+    
     <!--bootstrap-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="/bootstrap.js"></script>
+ <script type="text/javascript" src="/functions.js"></script>
+
     <!--font awesome-->
 <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-a11y="true"></script>
 </head>
@@ -144,13 +147,18 @@
 </div>
     
 <!-- section 3: applying the use case- favorites and listings -->
-<div class="container col-8 shadow-all pt-5 bg-light">
+<div class="container col-8 shadow-all pt-5 pb-5 bg-light">
     <!-- title -->
     <div class="row flex-nowrap justify-content-between align-items-center">
         <p class="text-center text-uppercase carahsoft-text col-12 pb-3">
         Applying the Use Case: Favorites &amp; Listings
         </p>
-    </div>   
+    </div>  
+    <div class="row flex-nowrap justify-content-between align-items-center p-5">
+        <p class="text-center carahsoft-text col-12 p-5">
+        What will someone with no listings see on that tab? Can a user see potential roommates without having liked anyone? Where can landlords find their potential tennants?
+        </p>
+    </div> 
 
     <!-- applied 1 -->
     <div class="row justify-content-around align-items-start col-12 no-gutters">
@@ -160,32 +168,24 @@
         <p class="mt-3 flatfit-text-sm" style="color: #3c3c3a;">... by moving into an available room.</p>
     </div>
     <div class="col-sm-4 col-12 p-2">
+        <p class="text-uppercase text-center font-weight-bold">Listings</p>
         <img src="assets/flatfit/mylistingsnolistings.jpg" alt="Use Case Example 1 Listing Page" class="mw-100" style="border: thick solid #3c3c3a;">
     </div>
-    <div class="col-sm-4 col-12 p-2 slideshow-container position-relative">
-        <img src="assets/flatfit/favorites-rooms.jpg" alt="Use Case Example 1 Favorites Rooms" class="mw-100 flatfitSlides" style="border: thick solid #3c3c3a;">
-        <img src="assets/flatfit/favorites-no-flats.jpg" alt="Use Case Example 1 Favorites Flats" class="mw-100 flatfitSlides" style="border: thick solid #3c3c3a;">
-        <img src="assets/flatfit/favorites-no-roommates.jpg" alt="Use Case Example 1 Favorites Roommates" class="mw-100 flatfitSlides" style="border: thick solid #3c3c3a;">
+    <div class="col-sm-4 col-12 p-2 position-relative carousel" data-ride="carousel" id="carousel1flatfit" data-interval="2000">
+        <p class="text-uppercase text-center font-weight-bold">Favorites</p>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="assets/flatfit/favorites-rooms.jpg" alt="Use Case Example 1 Favorites Rooms" class="w-100 d-block" style="border: thick solid #3c3c3a;">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/flatfit/favorites-no-flats.jpg" alt="Use Case Example 1 Favorites Flats" class="w-100 d-block" style="border: thick solid #3c3c3a;">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/flatfit/favorites-no-roommates.jpg" alt="Use Case Example 1 Favorites Roommates" class="w-100 d-block" style="border: thick solid #3c3c3a;">
+        </div>
+        </div>
     </div>
     </div>
-     
-        <!-- favorites 3 tabs 1 -->
-        <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("flatfitSlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      slides[slideIndex-1].style.display = "inline-block";  
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
     
     <!-- applied 2 -->
     <div class="row justify-content-around align-items-start col-12 no-gutters">
@@ -195,32 +195,67 @@
         <p class="mt-3 flatfit-text-sm" style="color: #3c3c3a;">... to find a compatible roommate.</p>
     </div>
     <div class="col-sm-4 col-12 p-2">
-        <img src="assets/flatfit/mylistingsnolistings.jpg" alt="Use Case Example 1 Listing Page" class="mw-100" style="border: thick solid #3c3c3a;">
+        <p class="text-uppercase text-center font-weight-bold">Listings</p>
+        <img src="assets/flatfit/PotentialRoommates.jpg" alt="Use Case Example 2 Listing Page" class="mw-100" style="border: thick solid #3c3c3a;">
     </div>
-    <div class="col-sm-4 col-12 p-2 slideshow-container position-relative">
-        <img src="assets/flatfit/favorites-rooms.jpg" alt="Use Case Example 1 Favorites Rooms" class="mw-100 flatfitSlides" style="border: thick solid #3c3c3a;">
-        <img src="assets/flatfit/favorites-no-flats.jpg" alt="Use Case Example 1 Favorites Flats" class="mw-100 flatfitSlides" style="border: thick solid #3c3c3a;">
-        <img src="assets/flatfit/favorites-no-roommates.jpg" alt="Use Case Example 1 Favorites Roommates" class="mw-100 flatfitSlides" style="border: thick solid #3c3c3a;">
+    <div class="col-sm-4 col-12 p-2 position-relative carousel" id="carousel2flatfit" data-ride="carousel" data-interval="2000">
+        <p class="text-uppercase text-center font-weight-bold">Favorites</p>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="assets/flatfit/favorites-no-rooms.jpg" alt="Use Case Example 2 Favorites Rooms" class="w-100" style="border: thick solid #3c3c3a;">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/flatfit/favorites-no-flats.jpg" alt="Use Case Example 2 Favorites Flats" class="w-100" style="border: thick solid #3c3c3a;">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/flatfit/favorites-roommates.jpg" alt="Use Case Example 2 Favorites Roommates" class="w-100" style="border: thick solid #3c3c3a;">
+        </div>
+        </div>
     </div>
-    </div>
-    
+    </div>    
   
+    <!-- applied 3 -->
+    <div class="row justify-content-around align-items-start col-12 no-gutters">
+    <div class="col-sm-4 col-12 pl-5 pr-5">
+        <img src="assets/flatfit/use-cases-03.png" alt="Use Case Example 3" class="mw-100 d-none d-sm-block">
+        <p class="mt-3 flatfit-text-sm text-uppercase font-weight-bold flatfit-blue">List a Flat</p>
+        <p class="mt-3 flatfit-text-sm" style="color: #3c3c3a;">... because I am a landlord.</p>
+    </div>
+    <div class="col-sm-4 col-12 p-2">
+        <p class="text-uppercase text-center font-weight-bold">Listings</p>
+        <img src="assets/flatfit/PotentialTenants.jpg" alt="Use Case Example 3 Listing Page" class="mw-100" style="border: thick solid #3c3c3a;">
+    </div>
+    <div class="col-sm-4 col-12 p-2 position-relative carousel" id="carousel3flatfit" data-ride="carousel" data-interval="2000">
+        <p class="text-uppercase text-center font-weight-bold">Listings</p>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="assets/flatfit/favorites-no-rooms.jpg" alt="Use Case Example 3 Favorites Rooms" class="w-100" style="border: thick solid #3c3c3a;">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/flatfit/favorites-no-flats.jpg" alt="Use Case Example 3 Favorites Flats" class="w-100" style="border: thick solid #3c3c3a;">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/flatfit/favorites-no-roommates.jpg" alt="Use Case Example 3 Favorites Roommates" class="w-100" style="border: thick solid #3c3c3a;">
+        </div>
+        </div>
+    </div>
+    </div>    
 </div>
     
 <!-- section 4: -->   
 <div class="container col-10 bg-light pt-5 pb-5 shadow-all mb-5" style="z-index: 1000;">
 <div class="row flex-nowrap justify-content-between align-items-center">
     <p class="text-center text-uppercase carahsoft-text col-12 pb-3">
-    Social Reactions
+    Current Growth
     </p>
 </div>
 <div class="row justify-content-around col-12 no-gutters align-items-start">
-<div class="col-12 col-lg-6 mb-sm-0 mb-2">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518908362929815552" class="mw-100 col-12" height="600px" frameborder="0"></iframe>
+<img src="assets/flatfit/map.png" alt="Flatfit available in 10 cities as of June 2019" class="w-100">
 </div>
-<div class="col-12 col-lg-6 mb-sm-0 mb-2">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6516010133733076992" class="mw-100 col-12" frameborder="0" height="500px"></iframe>
-</div>
+<div class="row flex-nowrap justify-content-between align-items-center p-5">
+    <p class="text-center carahsoft-text col-12 p-3">
+    In the past year, Flatfit grew from one city to ten across three continents.
+    </p>
 </div>
 </div>
 </main>
