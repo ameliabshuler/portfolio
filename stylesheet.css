@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  scroll-behavior: smooth;
+}
+.shadow-all {
+    box-shadow: 0px -5px 20px 2px rgba(60, 60, 58, 0.4);
+}
+.bg-header {
+    background-color: none;
+    z-index: 1000;
+}
+.header {
+    font-family: futura, sansserif;
+    font-size: 1.8em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+#backarrow {
+    opacity: 0;
+}
+.bg-carahsoft {
+    background-image: url("../assets/carahsoft/carahsoft_background_061019.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.inner-carahsoft {
+    background-color: #D2D3D5;
+}
+.carahsoft-text {
+    color: #3c3c3a;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: futura, sansserif;
+    font-weight: 900;
+}
+.carahsoft-title {
+    color: #3c3c3a;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: futura, sansserif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.bg-cummins {
+    background-color: #da291c;
+}
+.cummins-text {
+    color: #3c3c3a;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: futura, sansserif;
+    font-weight: 900;  
+}
+.cummins-title {
+    color: #3c3c3a;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: futura, sansserif;
+    font-weight: 900; 
+}
+.inner-cummins {
+    background-color: #AAAAAA
+}
+.horizontal-line-cummins {
+    background-color: #3c3c3a;
+    height: .3em;
+    width: 100%;
+}
+.vertical-line-cummins {
+    background-color: #3c3c3a;
+    height: 3em;
+    width: 2%;
+}
+.bg-flatfit {
+    background-image: linear-gradient(45deg, #4ABBBD, #1DA2CA);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.inner-flatfit {
+    background-color: #F4A023;
+}
+.flatfit-title {
+    color: #3c3c3a;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: futura, sansserif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.flatfit-text {
+    color: #ffffff;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: futura, sansserif;
+    font-weight: 900;
+}
+.flatfit-text-sm {
+    color: #3c3c3a;
+    font-size: 1em;
+    text-align: center;
+    font-family: futura, sansserif;
+    font-weight: 500;
+}
+.flatfit-blue {
+    color: #1DA2CA;
+}
+
+.bg-home {
+    background-image: radial-gradient(circle, #FFC318, #EA961E);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.inner-home {
+    background-image: url("../assets/header/opening-logo.png");
+    background-attachment: scroll;
+    background-position: top left;
+    background-size: cover;
+    background-repeat: none;
+}
+.home-text {
+    color: #FFC318;
+    font-family: futura, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+#button-home {
+    color: #3c3c3a;
+    font-size: 2em;
+    z-index: 100000;
+    position:absolute;
+    transition: all .6s;
+}
+#button-home:hover {
+    transform:scale(1.5, 1.5);
+    color: #ffffff;
+}
+.home-preview {
+    box-shadow: 4px 4px 4px rgba(60, 60, 58, 0.6);
+    transition: all .6s;
+}
+.home-preview:hover {
+    transform:scale(1.2);
+}
+@media only screen and (max-width: 812px) {
+    .carahsoft-text {
+        font-size: 1em;
+    }
+    .flatfit-text {
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    .cummins-text {
+        font-size: 1em;
+    }
+    .cummins-title {
+        letter-spacing: -2px;
+        font-size: 2em;
+    }
+}
