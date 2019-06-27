@@ -12,12 +12,14 @@ html {
 }
 .header {
     font-family: futura, sansserif;
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 20px;
 }
-
+.description {
+    padding: 10%;
+}
 #backarrow {
     opacity: 0;
 }
@@ -43,7 +45,6 @@ html {
     text-align: center;
     font-family: futura, sansserif;
     font-weight: 900;
-    text-transform: uppercase;
 }
 .bg-cummins {
     background-color: #da291c;
@@ -57,11 +58,11 @@ html {
 }
 .cummins-title {
     color: #3c3c3a;
-    font-size: 2.5em;
+    font-size: 2.8em;
     text-transform: uppercase;
     text-align: center;
     font-family: futura, sansserif;
-    font-weight: 900; 
+    font-weight: 500;  
 }
 .inner-cummins {
     background-color: #AAAAAA
@@ -84,14 +85,6 @@ html {
 }
 .inner-flatfit {
     background-color: #F4A023;
-}
-.flatfit-title {
-    color: #3c3c3a;
-    font-size: 2.5em;
-    text-align: center;
-    font-family: futura, sansserif;
-    font-weight: 900;
-    text-transform: uppercase;
 }
 .flatfit-text {
     color: #ffffff;
@@ -149,21 +142,4 @@ html {
 }
 .home-preview:hover {
     transform:scale(1.2);
-}
-@media only screen and (max-width: 812px) {
-    .carahsoft-text {
-        font-size: 1em;
-    }
-    .flatfit-text {
-        font-size: 1em;
-        font-weight: 400;
-        letter-spacing: 2px;
-    }
-    .cummins-text {
-        font-size: 1em;
-    }
-    .cummins-title {
-        letter-spacing: -2px;
-        font-size: 2em;
-    }
 }
