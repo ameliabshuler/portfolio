@@ -58,3 +58,8 @@ $('#carouselcummins').carousel();
 $('#carousel1flatfit').carousel();
 $('#carousel2flatfit').carousel();
 $('#carousel3flatfit').carousel();
+
+function myHome (){
+var x = document.getElementById("button-home");
+x.style.display = 'none';
+}
