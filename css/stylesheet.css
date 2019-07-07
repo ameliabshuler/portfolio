@@ -144,10 +144,10 @@ html {
     }
 }
 .bg-ruckus {
-    background-image: url("../assets/ruckus/background-ruckus.jpg");
+    background-image: url("../assets/ruckus/background-lines.jpg");
     background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
 }
 #ruckus-percents {
 	background-image: url("../assets/ruckus/percents.gif");
