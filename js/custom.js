@@ -29,7 +29,12 @@ $('#carousel1flatfit').carousel();
 $('#carousel2flatfit').carousel();
 $('#carousel3flatfit').carousel();
 
-function myHome (){
-var x = document.getElementById("button-home");
-x.style.display = 'none';
+function showStuff(id, btn) {
+    document.getElementById(id).style.display = 'inline-block';
+    btn.style.display = 'none';
+    window.scrollTo(0, 800);
+    
+}
+function bodyOnLoad() {
+        window.scrollTo(0, 800);
 }

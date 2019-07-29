@@ -15,7 +15,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-142298355-1');
 </script>  
 
@@ -26,38 +25,38 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!--font awesome-->
 <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-a11y="true"></script>
+    
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body class="bg-home">
-<main class="container inner-home">
-<div class="row col-12 justify-content-center d-none d-sm-inline-flex fixed-bottom" style="bottom: 10%;">
-    <a href="#projects" onclick="this.style.visibility='hidden'" id="button-home">
-    <i class="fas fa-chevron-down"></i>
+<body>
+<section id="aboutme" class="no-gutters">
+<div>
+<div class="row">
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+  <source src="assets/header/final-video-noAS.mp4" type="video/mp4">
+</video>
+</div>
+<div class="row position-absolute" style="z-index: 10000; top:0; right:0; left:0; bottom:0;">
+<div class="col-5">
+</div>
+<div class="col-2 d-flex align-items-center h-100">
+    <a href="aboutme.html">
+   <img src="assets/header/opening-logo.png" alt="about-me" class="align-middle w-100 h-auto"> 
     </a>
 </div>
-<div class="d-flex justify-content-center">
-    <div class="row col-12">
-        <div class="row col-12 col-sm-6 d-inline-flex align-content-center no-gutters pt-5 pt-sm-0">
-            <div class="row col-12 no-gutters d-inline-flex justify-content-start align-content-center">
-            <div class="col-9 text-center" style="background-color: #3c3c3a;">
-            <p class="home-text">Amelia</p>
-            </div>
-            </div>
-            <div class="row col-12 no-gutters d-inline-flex justify-content-end align-content-center">
-            <div class="col-9 text-center" style="background-color: #3c3c3a;">
-            <p class="home-text">Shuler</p>
-            </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 d-inline-flex p-5 p-sm-0">
-			<a href="aboutme.html">
-            <img src="assets/header/header.png" alt="Amelia Shuler self-portrait" height="100%" width="100%">
-			</a>
-        </div>
-    </div>
+<div class="col-5">
 </div>
-</main>
-<main class="container h-100 pt-5 pb-5">
-<div id="projects" class="mt-5 mb-5 pt-3 pb-3">
+</div>
+<div class="row justify-content-center d-none d-sm-inline-flex fixed-bottom position-fixed" style="bottom: 10%; z-index: 30000;">
+    <button id="button-home" onClick="showStuff('projects', this)" href="#projects">
+    <i class="fas fa-chevron-down"></i>
+    </button>
+</div>
+</div>
+</section>
+<section id="projects" class="h-100 pt-5 pb-5 bg-home" style="display: none;">
+<div class="mt-5 mb-5 pt-3 pb-3">
     <p class="col-12 carahsoft-title">
     Projects
     </p>
@@ -143,6 +142,7 @@
             </div>
             </div>
 		</div>
-</main>
+    
+</section>
 </body>
 </html>
