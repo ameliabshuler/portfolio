@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cyber Smart Series</title>
+<title>Cummins Web ReDesign</title>
     <!-- custom -->
 <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 <link rel="icon" type="image/png" href="assets/header/logo-copy.png">
@@ -15,9 +15,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-142298355-1');
-</script>    
+</script>  
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <!--bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,53 +27,65 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!--font awesome-->
 <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-a11y="true"></script>
+    <!--custom font-->
+<link rel="stylesheet" href="https://use.typekit.net/erq0xnx.css">
 </head>
-<body class="bg-carahsoft">
-<header class="row col-12">
-<div class="sticky-top container col-3 col-sm-2 float-left">
-<div class="bg-header mt-sm-3"  onMouseOver="navRelease(backarrow)" onMouseOut="navHover(backarrow)">
-        <i class="fas fa-arrow-left" id="backarrow"></i>
-        <a href="projects.html">
-        <img src="assets/header/logo-copy.png" height="60" alt="return to home">
-        </a>
+<body>
+    <!-- home button -->
+<div class="position-absolute col-md-1 col-2 p-md-3 p-3">
+    <a href="index.html" onMouseOver="navHover()" onMouseOut="navRelease()">
+    <img src="assets/home/logo-copy.png" alt="go to home" class="w-100" id="homebutton">
+    <i class="fas fa-long-arrow-alt-left w-100" id="homebuttonhover"></i>
+    </a>
 </div>
-</div>
-<div class="col-9 col-sm-10"></div>
+    <!-- page title -->
+<header>
+    <p class="dark-text-large text-center p-4">CyberSmart Event Series</p>
 </header>
-<main role="main">
-<div class="container col-10 col-sm-8 mt-5 shadow-all inner-carahsoft">
-<div class="row flex-nowrap justify-content-between align-items-center">
-    <img src="assets/carahsoft/carahsoft-homepagecover.jpg" alt="carahsoft cybersmart live event series" class="mw-100">
-</div>
-<div class="row flex-nowrap justify-content-between align-items-center">  
-        <p class="carahsoft-text pt-5 pb-5">Branding, website, and signage for a five event series across the country. Sponsored by client Carahsoft.</p>
-</div>   
-</div>
-<div class="container col-11 col-sm-10 bg-light pt-5 pb-5 shadow-all" style="z-index: 1000;">
-<div class="row flex-nowrap justify-content-between align-items-center">
-    <p class="carahsoft-title col-12 pb-3">
-    Main Logo &amp; Color Scheme Options
-    </p>
-</div>
-<div class="row justify-content-around align-items-center col-12 no-gutters">
-<div class="col-12 col-sm-5 no-gutters mb-sm-0 mb-2">
-    <p class="carahsoft-text">Option 1</p>
-    <div class="pt-3 pb-3 pl-3 pr-3 inner-carahsoft" style="border: medium solid #3c3c3a;">
+<main>
+<section class="container-fluid mt-5">
+    <!-- row 1 -->
+    <div class="row">
+    <div class="col-12 col-md-4 bg-dark d-block p-5 align-items-center d-inline-flex">
+        <div>
+        <p class="text-white-small text-center text-uppercase">About</p>
+        <p class="text-white-small">Carahsoft’s Cybersmart series is a 6-event roadshow that focuses on state and local cybersecurity adoption. With live events in Atlanta, Austin, LA, Denver, and DC throughout the course of a year, there needed to be an overarching theme in the series to generate long-lasting buzz.</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 d-inline-flex align-items-center fullscreen">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="assets/carahsoft/background-video.mp4" type="video/mp4">
+        </video>
+        <img src="assets/carahsoft/carahsoft_eventoverviewbrandingoption1_061019.png" alt="cybersmart logo" class="col-9 position-absolute" style="z-index: 10000; left: 12%;">
+    </div>
+    </div>
+    <!-- row 2 -->
+    <div class="row">
+    <div class="col-12 col-md-4 bg-dark d-block p-5 align-items-center d-inline-flex">
+        <div>
+        <p class="text-white-small text-center text-uppercase">My Role</p>
+        <p class="text-white-small">Working with GEMG as their in-house designer for custom events, I was charged with designing the look and feel of the overarching event, look and feel of individual event, social materials, and physical event signage.</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 d-inline-flex align-items-center pt-5 flex-wrap">
+            <div class="col-12 col-sm-6 no-gutters mb-sm-0 mb-2">
+    <p class="text-dark-small text-center">Option 1</p>
+        <div class="pt-3 pb-3 pl-3 pr-3 inner-carahsoft" style="border: medium solid #3c3c3a;">
         <img src="assets/carahsoft/carahsoft_eventoverviewbrandingoption1_061019.png" alt="option one event branding" class="mw-100">
     </div>
-    <div class="row no-gutters mt-3 mb-3 justify-content-around">
+        <div class="row no-gutters mt-3 mb-3 justify-content-around">
         <div class="col-2" style="background-color: #3db39b; height: 3em;"></div>
         <div class="col-2" style="background-color: #472146; height: 3em;"></div>
         <div class="col-2" style="background-color: #eb694f; height: 3em;"></div>
         <div class="col-2" style="background-color: #fbbe49; height: 3em;"></div>
         <div class="col-2" style="background-color: #b3616f; height: 3em;"></div>
     </div>
-    <div class="row justify-content-around align-items-center col-12 no-gutters">
+        <div class="row justify-content-around align-items-center col-12 no-gutters">
         <img src="assets/carahsoft/carahsoft_individualeventbrandingoption1_061019.jpg" class="mw-100" alt="individual event option design">
     </div>
 </div>
-<div class="col-12 col-sm-5 no-gutters">
-    <p class="carahsoft-text">Option 2</p>
+            <div class="col-12 col-sm-6 no-gutters">
+    <p class="text-dark-small text-center">Option 2</p>
     <div class="pt-3 pb-3 pl-3 pr-3 inner-carahsoft mb-sm-0 mb-2" style="border: medium solid #3c3c3a;">
         <img src="assets/carahsoft/carahsoft_eventoverviewbrandingoption2_061019.png" alt="option one event branding" class="mw-100">
     </div>
@@ -87,51 +100,56 @@
         <img src="assets/carahsoft/carahsoft_individualeventbrandingoption2_061019.png" class="mw-100" alt="individual event option design">
     </div>
 </div>
-    <div class="row flex-nowrap justify-content-between align-items-center">  
-        <p class="carahsoft-text pt-5">Client presented with two options, chose 1st option to move forward with. Events located in Atlanta, Austin, Los Angeles, Denver, and D.C.</p>
+        <div class="col-12 d-inline-flex">
+        <p class="text-dark-small pt-5">Client presented with two options, chose 1st option to move forward with. Events located in Atlanta, Austin, Los Angeles, Denver, and D.C.</p>
+        </div>
+</div>
     </div>
-</div>
-</div>
-<div class="container col-10 col-sm-8 shadow-all inner-carahsoft pt-5">
-<div class="row flex-nowrap justify-content-between align-items-center">
-    <p class="carahsoft-title col-12 pb-3">
-    Overall Site &amp; Individual Landing Pages
-    </p>
-</div>
-<div class="row justify-content-around align-items-top col-12 no-gutters">
-<div class="col-12 col-sm-5 no-gutters mb-sm-0 mb-2">
-    <div class="pt-3 pb-3 inner-carahsoft">
-        <a href="http://cybersmartseries.com/" target="_blank">
-        <img src="assets/carahsoft/carahsoft_desktophomepage_061019.png" class="mw-100" alt="desktop overall site">
-        </a>
+    <!-- row 3 -->
+    <div class="row">
+    <div class="col-12 col-md-4 bg-dark p-5 align-items-center d-inline-flex">
+        <div>
+        <p class="text-white-small text-center text-uppercase pt-5">Challenge</p>
+        <p class="text-white-small pb-5">Each city had its own “subtitle” that was not finalized until 4-6 weeks before the event. I had to build a hub for all the pages without definitive locations, names, or information and continuously update it as new information came in. Knowing this, I made my design centric around the cities themselves while incorporating an overarching “cyber” theme. I presented the client with two distinct options and moved forward with the one they picked.</p>
+        </div>
     </div>
-</div>
-<div class="col-12 col-sm-5 no-gutters pl-5 pr-5">
-    <div class="pt-3 pb-3 pl-lg-5 pl-0 pr-lg-5 pr-0 inner-carahsoft mb-sm-0 mb-2">
-        <a href="http://www.cybersmartseries.com/home/atlanta/" target="_blank">
-        <img src="assets/carahsoft/carahsoft_mobileindividualpage_061019.png" alt="mobile individual landing pages" class="mw-100">
-        </a>
+    <div class="col-12 col-md-8 d-inline-flex align-items-start flex-wrap mt-5 mb-5">
+            <div class="carahsoft-mobile col-4 pt-5 pb-5">
+            </div>
+            <div class="carahsoft-web col-8 pt-5 pb-5">
+            </div>
     </div>
-</div>
-</div>
-</div>
-<div class="container col-11 col-sm-10 bg-light pt-5 pb-5 shadow-all mb-5" style="z-index: 1000;">
-<div class="row flex-nowrap justify-content-between align-items-center">
-    <p class="carahsoft-title col-12 pb-3">
-    Social Reactions
-    </p>
-</div>
-<div class="row justify-content-around col-12 no-gutters align-items-start">
-<div class="col-12 col-lg-6 mb-sm-0 mb-2">
-        <p class="description carahsoft-text">See below for on-stage signage.</p>
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518908362929815552" class="mw-100 col-12" height="600px" frameborder="0"></iframe>
-</div>
-<div class="col-12 col-lg-6 mb-sm-0 mb-2">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6516010133733076992" class="mw-100 col-12" frameborder="0" height="500px"></iframe>
-        <p class="description carahsoft-text">Each event sponsored by a secondary client, see above for Austin's social promotion by FireEye.</p>
-</div>
-</div>
-</div>
+    </div>
+    <!-- row 4 -->
+    <div class="row">
+    <div class="col-12 col-md-4 bg-dark d-block p-5 align-items-center d-inline-flex">
+        <div>
+        <p class="text-white-small text-center text-uppercase">Deliverables</p>
+        <li class="text-white-small">Two design options for overarching and individual event themes</li>
+        <li class="text-white-small">7 total distinct brand identities</li>
+        <li class="text-white-small">A content hub for the series + individual event pages</li>
+        <li class="text-white-small">Social ads and house ads to run on GEMG</li>
+        <li class="text-white-small">Physical on-stage signage for each event</li>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 d-inline-flex align-items-start flex-wrap">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6518908362929815552" class="mw-100 col-7" height="605px" frameborder="0"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6516010133733076992" class="mw-100 col-5" frameborder="0" height="605px"></iframe>
+    </div>
+    </div>
+    <!-- row 5 -->
+    <div class="row">
+    <div class="col-12 col-md-4 bg-dark d-block p-5 align-items-center d-flex">
+        <div>
+        <p class="text-white-small text-center text-uppercase">Insights</p>
+        <p class="text-white-small text-center">Oftentimes, we are asked to begin the design process without seeing the whole picture upfront. While I try to avoid this as much as I can, in some cases it is inevitable. In those scenarios, I work closely to communicate with my team and troubleshoot any problems that arrise meaning I am revising and refining constantly.</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 d-inline-flex align-items-center flex-wrap">
+        <img src="assets/carahsoft/cybersmart-insights.jpg" alt="excel wireframe" class="col-12 pt-5">
+    </div>
+    </div>
+</section>
 </main>
 </body>
 </html>

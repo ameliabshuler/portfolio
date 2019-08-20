@@ -1,10 +1,11 @@
-function navHover(x) {
-    x.style.opacity = "0";
-    x.style.transition = "all 0.6s";
+function navHover(id, id) {
+    document.getElementById('homebutton').style.display = 'none';
+    document.getElementById('homebuttonhover').style.display = 'inline-block'; 
+    document.querySelectorAll("#homebutton, #homebuttonhover").style.transition = "all 2s";
 }
-function navRelease(x){
- x.style.opacity = "100";
-x.style.transition = "all 0.6s";
+function navRelease(id, id) {
+    document.getElementById('homebuttonhover').style.display = 'none';
+    document.getElementById('homebutton').style.display = 'inline-block';   
 }
 var images = [];
 function preload() {
@@ -24,17 +25,8 @@ preload(
     "assets/carahsoft/carahsoft_background_061019.jpg",
 	"http://www.govexec.com/insights/what-is-cbrs/"
 )
-$('#carouselcummins').carousel();
 $('#carousel1flatfit').carousel();
 $('#carousel2flatfit').carousel();
 $('#carousel3flatfit').carousel();
-
-function showStuff(id, btn) {
-    document.getElementById(id).style.display = 'inline-block';
-    btn.style.display = 'none';
-    window.scrollTo(0, 800);
-    
-}
-function bodyOnLoad() {
-        window.scrollTo(0, 800);
-}
+$('#findARoommateWho').carousel();
+$('#carouselcummins').carousel();
