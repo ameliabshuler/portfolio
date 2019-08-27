@@ -38,19 +38,42 @@ html {
 }
 .text-white-small {
     color: white;
-    font-family: 'futura', arial, sans-serif;
-    font-weight: 100;
+    font-family: 'futura-pt', arial, sans-serif;
+	font-style: normal;
+    font-weight: 300;
+}
+ul li {
+      list-style-position: outside;
 }
 .text-dark-small {
     color: #3c3c3a;
-    font-family: 'futura', arial, sans-serif;
-    font-weight: 100;
+    font-family: 'futura-pt', arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 .text-yellow-small {
 	color: #FFC318;
-	font-family: 'futura pt', sans-serif;
-	font-weight: 300;
+	font-family: 'futura-pt', sans-serif;
 	font-style: normal;
+    font-weight: 300;
+}
+.text-white-small-bold {
+    color: white;
+    font-family: 'futura-pt-bold', arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.text-dark-small-bold {
+    color: #3c3c3a;
+    font-family: 'futura-pt-bold', arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.text-yellow-small-bold {
+	color: #FFC318;
+	font-family: 'futura-pt-bold', sans-serif;
+	font-style: normal;
+    font-weight: 900;
 }
 .bg-yellow1 {
     background-color: rgba(255,195,24,0.50);
