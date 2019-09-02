@@ -95,7 +95,8 @@ ul li {
     background-image: url("../assets/carahsoft/carahsoft_mobileindividualpage_061019.png");
     background-attachment: scroll;
     overflow: hidden;
-    min-height: 100%;
+    min-height: 900px;
+    max-width: 100%;
     background-size: cover;
     background-repeat: none;
 }
@@ -103,7 +104,8 @@ ul li {
     background-image: url("../assets/carahsoft/carahsoft_desktophomepage_061019.png");
     background-attachment: scroll;
     overflow: hidden;
-    min-height: 90%;
+    min-height: 900px;
+    max-width: 100%;
     background-size: cover;
     background-repeat: none;
 }
