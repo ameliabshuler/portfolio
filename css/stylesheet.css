@@ -121,13 +121,43 @@ ul li {
 .preview:hover {
     transform: scale(0.9);
 }
-.hover-link section {
+.hover-link {
 	    transition: all 0.3s ease-in-out;
 }
 .hover-link:hover {
 	text-decoration: none;
 	text-color: #3c3c3a;
 }
-.hover-link section:hover {
+.hover-link:hover {
 	transform: scale(1.1);
+}
+.underline-yellow2 {
+	border-bottom: thick solid #ff9900;
+}
+.contact-button {
+	color: #3c3c3a;
+	background-color: #ff9900;
+	font-family: 'futura-pt', sans-serif;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 60px;
+	padding-right: 60px;
+	border-radius: 25px;
+	border: none;
+	text-align: center;
+	max-height: 50px;
+	
+}
+.contact-button a {
+	font-family: 'futura-pt', sans-serif;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: #3c3c3a;
+	text-align: center;
+}
+.contact-button a:hover {
+	text-decoration: none;
+	color: #3c3c3a;
 }
