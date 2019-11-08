@@ -29,20 +29,26 @@ html {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    transition: all ease 1s;
 }
+
 a {
     transition: all ease 1s;
 }
-header a:hover {
+header .circle:hover {
     text-decoration: none;
     color: #FFC318;
-}
-header .circle:hover {
     border-color: #FFC318;
+}
+header a:hover {
+    text-decoration: none;
+    color: #ffc318;
 }
 .bg-home {
 background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
     background-position: cover;
+	background-repeat: no-repeat;
+	width: 100%;
 }
 .utopia-bold {
     font-family: 'utopia-std-display', 'futura-pt', arial, sansserif;
@@ -55,6 +61,8 @@ background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
 }
 .skill-link {
     color: #FFC318;
+    line-height: 1em;
+    letter-spacing: 2px;
     transition: all ease-in-out .5s;
 }
 .skill-link:hover {
@@ -78,8 +86,9 @@ background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
     background-image: url("../../portfolio 11.2019/assets/sunflower-bg.jpg");
     background-size: cover;
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1920px) {
 	.header {
 		font-size: 2em;
 	}
+	
 }
