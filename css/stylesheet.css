@@ -83,7 +83,7 @@ background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
 	transform: scale(1.5);
 }
 .bg-sunflower {
-    background-image: url("../../portfolio 11.2019/assets/sunflower-bg.jpg");
+    background-image: url("https://ameliashuler.com/assets/sunflower-bg.jpg");
     background-size: cover;
 }
 @media only screen and (max-width: 1920px) {
