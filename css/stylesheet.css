@@ -17,13 +17,14 @@ html {
     color: #3c3c3a;
     font-family: 'futura-pt', arial, sansserif;
     font-weight: 400;
+	font-size: 1.2em;
 }
 .futura-large {
-    font-size: 2em;
+    font-size: 2.4em;
 }
 .font-medium {
-    font-size: 1.6em;
-    line-height: 1.6em;
+    font-size: 1.8em;
+    line-height: 1.8em;
 }
 .circle {
     border: thick solid #3c3c3a;
@@ -58,7 +59,7 @@ background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
     font-weight: 700;
 }
 .header {
-    font-size: 3em;
+    font-size: 4em;
 }
 .skill-link {
     color: #FFC318;
@@ -89,7 +90,7 @@ background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
 }
 @media only screen and (max-width: 1920px) {
 	.header {
-		font-size: 2em;
+		font-size: 3em;
 	}
 	
 }
