@@ -102,7 +102,6 @@ background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
     color: #EA961E;
 }
 .trial {
-    background-color: blue;
     transition: all ease-in-out .5s;
     height: 350px;
     overflow: hidden;
