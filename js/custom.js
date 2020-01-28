@@ -30,3 +30,14 @@ $('#carousel2flatfit').carousel();
 $('#carousel3flatfit').carousel();
 $('#findARoommateWho').carousel();
 $('#carouselcummins').carousel();
+
+window.onscroll = function() {myHome()};
+
+function myHome() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+document.getElementById("logoHome").className = "afterhome";
+  }
+else {
+document.getElementById("logoHome").className = "beforehome";
+  }}
+$('#photoModal1').modal(options);

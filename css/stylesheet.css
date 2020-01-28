@@ -5,8 +5,32 @@
 html {
   scroll-behavior: smooth;
 }
+.beforehome {
+    max-width: 100%;
+    width: 50%;
+    top: 25%;
+    position: absolute;
+}
+.afterhome {
+    max-width: 15%;
+    top: 2%;
+    left: 2%;
+}
 .bg-yellow2 {
     background-color: #EA961E;
+}
+.subhead {
+    font-family: 'futura-pt', arial, sansserif;
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 1.4em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffc318;
+}
+.subhead:hover {
+    text-decoration: none;
+    color: #3c3c3a;
 }
 .futura-demi {
     color: #3c3c3a;
@@ -26,6 +50,17 @@ html {
     font-size: 1.8em;
     line-height: 1.8em;
 }
+.logo-cover {
+    position: absolute;
+    top: 12.5%;
+    left: 12.5%;
+}
+.personal-statement {
+    position: absolute;
+    bottom: 15%;
+    left: 35%;
+    padding-right: 12.5%;
+}
 .circle {
     border: thick solid #3c3c3a;
     border-radius: 50%;
@@ -42,35 +77,39 @@ header .circle:hover {
     color: #FFC318;
     border-color: #FFC318;
 }
-header a:hover {
-    text-decoration: none;
-    color: #ffc318;
-}
 .bg-home {
 background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
     background-position: cover;
 	background-repeat: no-repeat;
 	width: 100%;
 }
-.utopia-bold {
+.header {
     font-family: 'utopia-std-display', 'futura-pt', arial, sansserif;
     color: #ea961e;
 	font-style: italic;
     font-weight: 700;
-}
-.header {
-    font-size: 4em;
+    font-size: 4em;    
 }
 .skill-link {
     color: #FFC318;
     line-height: 1em;
     letter-spacing: 2px;
-    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
 }
 .skill-link:hover {
     text-decoration: none;
     font-weight: 600;
     color: #EA961E;
+}
+.trial {
+    background-color: blue;
+    transition: all ease-in-out .5s;
+    height: 350px;
+    overflow: hidden;
+    justify-content: center;
+}
+.trial:hover {
+    transform: scale(1.1);
 }
 .case-studies:hover {
     opacity: .5;
@@ -88,9 +127,14 @@ background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
     background-image: url("https://ameliashuler.com/assets/sunflower-bg.jpg");
     background-size: cover;
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1080px) {
 	.header {
 		font-size: 3em;
 	}
-	
+    .beforehome {
+    max-width: 100%;
+    position: absolute;
+    width: 80%;
+    top: 25%;
+}
 }
