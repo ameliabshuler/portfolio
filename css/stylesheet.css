@@ -9,6 +9,7 @@ html {
     max-width: 100%;
     width: 50%;
     top: 25%;
+    left: 20%;
     position: absolute;
 }
 .afterhome {
@@ -59,7 +60,7 @@ html {
     left: 12.5%;
 }
 .circle {
-    border: thick solid #3c3c3a;
+    border: medium solid #FFC318;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -71,8 +72,8 @@ a {
 }
 header .circle:hover {
     text-decoration: none;
-    color: #FFC318;
-    border-color: #FFC318;
+    color: #3c3c3a;
+    border-color: #3c3c3a;
 }
 .bg-home {
 background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
