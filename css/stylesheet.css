@@ -1,137 +1,175 @@
 @charset "UTF-8";
 @import url("https://use.typekit.net/erq0xnx.css");
 /* CSS Document */
-
-html {
-  scroll-behavior: smooth;
-}
-.beforehome {
-    max-width: 100%;
-    width: 50%;
-    top: 25%;
-    left: 20%;
-    position: absolute;
-}
-.afterhome {
-    max-width: 15%;
-    top: 2%;
-    left: 2%;
-}
-.bg-yellow2 {
-    background-color: #EA961E;
-}
-.subhead {
-    font-family: 'futura-pt', arial, sansserif;
-    font-weight: 400;
-    font-size: 1.8em;
-    line-height: 1.4em;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #ffc318;
-}
- a.subhead:hover {
-    text-decoration: none;
-    color: #3c3c3a;
-}
-.visual-design {
-    border-bottom: thin solid #f2f2f2;
-}
-.futura-demi {
-    color: #3c3c3a;
-    font-family: 'futura-pt', arial, sansserif;
-    font-weight: 600;
-}
-.futura-book {
-    color: #3c3c3a;
-    font-family: 'futura-pt', arial, sansserif;
-    font-weight: 400;
-	font-size: 1.2em;
-}
-.futura-large {
-    font-size: 2.4em;
-}
-.font-medium {
-    font-size: 1.8em;
-    line-height: 1.8em;
-}
-.logo-cover {
-    position: absolute;
-    top: 12.5%;
-    left: 12.5%;
-}
-.circle {
-    border: medium solid #FFC318;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: all ease 1s;
-}
-
-a {
-    transition: all ease 1s;
-}
-header .circle:hover {
-    text-decoration: none;
-    color: #3c3c3a;
-    border-color: #3c3c3a;
-}
-.bg-home {
-background: linear-gradient(-45deg, #ffffff 50%, #EA961E 50%);
-    background-position: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-.header {
-    font-family: 'utopia-std-display', 'futura-pt', arial, sansserif;
-    color: #ea961e;
-	font-style: italic;
+h1.header, .header{
+    font-family: 'utopia-std-display', Georgia, serif;
     font-weight: 700;
-    font-size: 3em;    
+    font-style: italic;
+    font-size: 300%;
+    display: flex;
 }
-.skill-link {
-    color: #FFC318;
-    line-height: 1em;
-    letter-spacing: 2px;
-    -webkit-transition: all ease-in-out .5s;
-}
-.skill-link:hover {
-    text-decoration: none;
+h2.subhead, .subhead {
+    font-family: 'futura-pt', Arial, sans-serif;
     font-weight: 600;
+    font-size: 160%;
+    display: flex;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+h2.subhead-small {
+    font-family: 'futura-pt', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    display: flex;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;  
+}
+p {
+    font-family: 'futura-pt', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    display: flex;
+}
+.grey {
+    color: #3c3c3a;
+}
+.yellow-1 {
+    color: #FFC318;
+}
+.yellow-2 {
     color: #EA961E;
 }
-.trial {
-    transition: all ease-in-out .5s;
-    height: 350px;
-    overflow: hidden;
-    justify-content: center;
+/* home page */
+.link {
+    color: #3c3c3a;
 }
-.trial:hover {
-    transform: scale(1.1);
+a.link:hover {
+    color: #EA961E;
+    text-decoration: none !important;
 }
-.case-studies:hover {
-    opacity: .5;
+a:hover {
+    text-decoration: none !important;
 }
-.extra-skill-carousel {
-	color: #3c3c3a;
-	transition: all ease-in-out .5s;
+.bg-home {
+background: linear-gradient(-35deg, #FFFFFF 30%, #FFC318 0%);
 }
-.extra-skill-carousel:hover {
-	color: #EA961E;
-	text-decoration: none;
-	transform: scale(1.5);
-}
-.bg-sunflower {
-    background-image: url("https://ameliashuler.com/assets/sunflower-bg.jpg");
-    background-size: cover;
+.home-cover {
+    top: 15%;
+    left: 15%;
+    position: fixed;
 }
 @media only screen and (max-width: 1080px) {
-	.header {
-		font-size: 3em;
-	}
-    .beforehome {
-    max-width: 100%;
-    position: absolute;
-    width: 80%;
-    top: 25%;
+    .home-cover {
+        top: 5%;
+        left: 0%;
+        position: relative;
+    }
+.bg-home {
+background: linear-gradient(-25deg, #FFFFFF 40%, #FFC318 0%);
 }
+    
+}
+.home-cover-2 {
+    top: 45%;
+    left: 35%;
+    position: fixed;
+}
+/* resume */
+.line {
+    border-right: thick solid #EA961E;
+}
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
+}
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 100%;
+	background-color: #EA961E;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+ul.timeline-list li {
+	position: relative;
+	clear: both;
+	display: table;
+}
+ul.timeline-list li .timeline_content {
+	width: 45%;
+	color: #3c3c3a;
+    float: left;
+}
+ul.timeline-list li:nth-child(2n) .timeline_content {
+	float: right;
+	text-align: left;
+}
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-color: #EA961E;
+	left: 50%;
+	top: 10%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+/* case studies */
+.opacity {
+    opacity: 100%;
+    transition: all .5s ease-in-out;
+}
+.opacity:hover {
+    opacity: 50%;
+}
+#uxResearch {
+    visibility: hidden;
+}
+/* cummins */
+.divider {
+    border-bottom: 2px #3c3c3a solid;
+}
+.bg-yellow-1 {
+    background-color: #FFC318;
+}
+.bg-yellow-2 {
+    background-color: #EA961E;
+}
+.bg-grey {
+    background-color: #D8D8D7;
+  }
+.body-small {
+    font-family: arial, sansserif;
+    line-height: 16pt;
+    font-size: 11pt;
+}
+.border-hero {
+    border: thin solid #D8D8D7;
+}
+/*responsive home*/
+@media only screen and (max-width: 1080px) {
+        .home-cover-2 {
+        top: 35%;
+        left: 0%;
+        position: relative;
+        align-content: center;
+    }
+}
+/*responsive resume*/
+@media only screen and (max-width: 1080px) {
+     ul.timeline-list li .timeline_content {
+         width: 100%;
+    }
+    ul.timeline-list li:before {
+        display: none;
+    }
+    ul.timeline-list:before {
+     width: 0px;   
+    }
 }
