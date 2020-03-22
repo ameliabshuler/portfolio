@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://use.typekit.net/erq0xnx.css");
-/* CSS Document */
+/* universal */
 h1.header, .header{
     font-family: 'utopia-std-display', Georgia, serif;
     font-weight: 700;
@@ -39,6 +39,24 @@ p {
 .yellow-2 {
     color: #EA961E;
 }
+/* universal responsive */
+@media only screen and (max-width: 1080px) {
+    h1.header, .header{
+    font-family: 'utopia-std-display', Georgia, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 220%;
+    display: flex;
+}
+    h2.subhead, .subhead {
+    font-family: 'futura-pt', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 120%;
+    display: flex;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+}
 /* home page */
 .link {
     color: #3c3c3a;
@@ -58,21 +76,30 @@ background: linear-gradient(-35deg, #FFFFFF 30%, #FFC318 0%);
     left: 15%;
     position: fixed;
 }
-@media only screen and (max-width: 1080px) {
-    .home-cover {
-        top: 5%;
-        left: 0%;
-        position: relative;
-    }
 .bg-home {
 background: linear-gradient(-25deg, #FFFFFF 40%, #FFC318 0%);
-}
-    
 }
 .home-cover-2 {
     top: 45%;
     left: 35%;
     position: fixed;
+}
+/*responsive home*/
+@media only screen and (max-width: 1080px) {
+    .home-cover-2 {
+        top: 20%;
+        left: 20%;
+        position: relative;
+        align-content: center;
+    }
+    .home-cover {
+        top: 5%;
+        left: 0%;
+        position: relative;
+    }
+    .bg-home {
+    background: linear-gradient(-25deg, #FFFFFF 60%, #FFC318 0%);
+}
 }
 /* resume */
 .line {
@@ -120,6 +147,18 @@ ul.timeline-list li:before {
 	        transform: translate(-50%, -50%);
 	border-radius: 50%;
 }
+/*responsive resume*/
+@media only screen and (max-width: 1080px) {
+     ul.timeline-list li .timeline_content {
+         width: 100%;
+    }
+    ul.timeline-list li:before {
+        display: none;
+    }
+    ul.timeline-list:before {
+     width: 0px;   
+    }
+}
 /* case studies */
 .opacity {
     opacity: 100%;
@@ -151,25 +190,4 @@ ul.timeline-list li:before {
 }
 .border-hero {
     border: thin solid #D8D8D7;
-}
-/*responsive home*/
-@media only screen and (max-width: 1080px) {
-        .home-cover-2 {
-        top: 35%;
-        left: 0%;
-        position: relative;
-        align-content: center;
-    }
-}
-/*responsive resume*/
-@media only screen and (max-width: 1080px) {
-     ul.timeline-list li .timeline_content {
-         width: 100%;
-    }
-    ul.timeline-list li:before {
-        display: none;
-    }
-    ul.timeline-list:before {
-     width: 0px;   
-    }
 }
