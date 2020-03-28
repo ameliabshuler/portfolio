@@ -27,7 +27,7 @@
     
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    
 <!--bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -273,8 +273,13 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">Competitive Analysis</h2>    
         <p class="body">Clarke, a main competitor had divided their site navigation into engines, parts, and service. While engines addressed the first persona and service addressed the second, parts was misleading and actually contained information about warranty, which falls under service.</p>
         </div>
-        <div class="col-12 col-md-6 p-5 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
         <img src="assets/cummins-website/clarke-flow.png" alt="Flow of Competitor" class="mw-100">
+            </div>
+</div>
+        <div class="col-12 col-md-6 p-5 d-inline-flex align-items-center" data-toggle="modal" data-target="#cumminsModal1">
+        <img src="assets/cummins-website/clarke-flow.png" alt="Flow of Competitor" class="mw-100 zoom">
         </div>
         </div>
         <div class="row col-12 py-5 d-flex-inline align-items-center">
@@ -308,7 +313,12 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">Issue 1</h2>    
         <p class="body">To find information, a user had to open 4 different tabs (that all appeared in new windows) and download an external PDF.</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <img src="assets/cummins-website/evaluation-1.gif" alt="Many pop ups just to get to one piece of information" class="mw-100">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal2">
             <img src="assets/cummins-website/evaluation-1.gif" alt="Many pop ups just to get to one piece of information" class="mw-100">
         </div>
         </div>
@@ -317,7 +327,12 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">Issue 2</h2>    
         <p class="body">‘Start-up Installation’ was referred to as both "start up" and "application installation".</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <img src="assets/cummins-website/informationarchitecture-cummins.jpg" alt="Bad taxonomy throughout the site" class="mw-100">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal3">
             <img src="assets/cummins-website/informationarchitecture-cummins.jpg" alt="Bad taxonomy throughout the site" class="mw-100">
         </div>
         </div>
@@ -326,7 +341,12 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">Issue 3</h2>    
         <p class="body">Some information pertinent to our service and installation persona was buried deep in the selling side of the architecture.</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <img src="assets/cummins-website/Old-Flow.png" alt="user flows did not match navigation" class="mw-100">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal4">
             <img src="assets/cummins-website/Old-Flow.png" alt="user flows did not match navigation" class="mw-100">
         </div>
         </div>
@@ -344,7 +364,12 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">New Site Map</h2>    
         <p class="body">I developed a site map that better aligned to these two personas. After talking to internal stakeholders, we settled on putting the information relevant to the third, smaller persona, installation, with service. Since maintenancing and installing had the most overlap, it made sense to group these together.</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <img src="assets/cummins-website/New-Flow.png" alt="New Site Map" class="mw-100">
+            </div>
+        </div>       
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal5">
         <img src="assets/cummins-website/New-Flow.png" alt="New Site Map" class="mw-100">
         </div>
         </div>
@@ -379,7 +404,12 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">Rating Charts</h2>    
         <p class="body">Internal users were unwilling to budge on the 4 rating charts listed in the left-hand navigation above. You can see an example of the UI-focused, very attractive chart above, centered.</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <img src="assets/cummins-website/rating-chart.jpg" alt="There were 4 charts that were many rows" class="mw-100">
+            </div>
+        </div> 
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal6">
             <img src="assets/cummins-website/rating-chart.jpg" alt="There were 4 charts that were many rows" class="mw-100">
         </div>
         </div>
@@ -388,7 +418,12 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">Engine Calculator</h2>    
         <p class="body">They also wanted to keep the engine calculator. As I was running out of time and the code used to build this was out of my wheelhouse, I chose not to fight them on this. They could re-evaluate in the future whether this feature was necessary.</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <img src="assets/cummins-website/engine-calculator.jpg" alt="Engine calculator seems redunant" class="mw-100">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal7">
             <img src="assets/cummins-website/engine-calculator.jpg" alt="Engine calculator seems redunant" class="mw-100">
         </div>
         </div>
@@ -406,7 +441,14 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">Low Fidelity Prototype</h2>    
         <p class="body">Since I worked on this for only a month, I managed to get the framework of the pages done. The client wanted to iterate on page copy and photos after I was gone, and they requested I use a prototyping tool they were familiar so they could continue to edit after I left. Surprisingly, I was able to create a comparable prototype in Excel by linking cells together, changing cell color, and inserting photos. This was a tool they were able to use after I left.</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <video class="mw-100" loop autoPlay muted>
+        <source src="assets/cummins-website/interactive-low-fidelity-mockup.mp4" type="video/mp4">    
+        </video>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal8">
         <video class="mw-100" loop autoPlay muted>
         <source src="assets/cummins-website/interactive-low-fidelity-mockup.mp4" type="video/mp4">    
         </video>
@@ -426,7 +468,12 @@ Information from internal stakeholders revealed two main personas: those wishing
         <h2 class="subhead">New Rating Chart</h2>    
         <p class="body">New rating chart. The charts were combined to include both “International Engines” and “US Engines” since, a) this engines are not referred to in this way anywhere else on the site and b) it decreased the amount of charts needed from 4 to 2.</p>
         </div>
-        <div class="col-12 col-md-6 d-inline-flex align-items-center">
+        <div class="modal fade" id="cumminsModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog bg-white p-3 row" role="document">
+        <img src="assets/cummins-website/new-engine-rating-chart.jpg" alt="New Engine Rating Chart in Excel Mockup" class="mw-100">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 d-inline-flex align-items-center zoom" data-toggle="modal" data-target="#cumminsModal9">
             <img src="assets/cummins-website/new-engine-rating-chart.jpg" alt="New Engine Rating Chart in Excel Mockup" class="mw-100">
         </div>
         </div>

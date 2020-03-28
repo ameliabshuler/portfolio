@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url("https://use.typekit.net/erq0xnx.css");
 /* universal */
+body {
+    color: #3c3c3a;
+}
 h1.header, .header{
     font-family: 'utopia-std-display', Georgia, serif;
     font-weight: 700;
@@ -191,3 +194,14 @@ ul.timeline-list li:before {
 .border-hero {
     border: thin solid #D8D8D7;
 }
+/* zoom modal */
+.zoom:hover {
+    cursor: zoom-in;
+}
+.modal-dialog, .modal {
+    cursor: zoom-out;
+}
+@media (min-width: 576px) {
+.modal-dialog {
+ max-width: 80% !important;   
+}}

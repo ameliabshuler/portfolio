@@ -7,6 +7,4 @@ $(document).ready(function(){
       $(this).carousel('next');
    });
 });
-function appear(id) {
-    document.getElementById(id).style.visibility = "visible";
-}
+$('#cumminsModal1').modal();
