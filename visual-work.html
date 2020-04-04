@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amelia Shuler Work</title>
+<!-- custom -->
+<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<script src="js/custom.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/erq0xnx.css">
+
+    <!-- favicon -->
+<link rel="icon" 
+      type="image/png" 
+      href="assets/favicon.png" />
+ 
+    
+<!-- analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142298355-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-142298355-1');
+</script>  
+    
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+<!--bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--font awesome-->
+<script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-a11y="true"></script>
+</head>
+<body class="container min-vh-100 w-100 justify-content-center">
+    <header class="pt-5">
+        <div class="row align-items-center flex-md-nowrap justify-content-md-between">
+        <div class="col-md-3 col-3">
+            <a href="visual.html">
+            <img src="assets/logo-yellow2.png" alt="back to home" class="mw-100 d-none d-md-block">
+            <img src="assets/favicon-yellow2.png" alt="back to home" class="mw-100 d-block d-md-none">
+                </a>
+        </div>
+        <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <h1 class="header grey text-center">Visual Work</h1>
+        </div>
+        <div class="col-3 d-none d-md-inline">
+        </div>
+        </div>
+    </header>
+    <section class="justify-content-center row">
+    <div class="col-8">
+    <p class="body text-center">In previous roles I have worked across print, video, photo, animation, and web. Also included are freelance work I have done with illustration.</p>
+    </div>
+    </section>
+    <main class="row col-12 justify-content-center d-flex align-items-center">
+        <script>
+        $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+            // $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+           // $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+        </script>
+        <section class="row col-md-10 py-3 justify-content-around no-gutters  d-flex align-items-center">
+        <button data-filter="all" class="link btn filter-button">
+            <h2 class="subhead">All</h2>
+        </button>
+        <button data-filter="visual" class="link btn filter-button">
+            <h2 class="subhead">Visual</h2>
+        </button>
+        <button data-filter="photo" class="link btn filter-button">
+            <h2 class="subhead">Photo</h2>
+        </button>
+        <button data-filter="print" class="link btn filter-button">
+            <h2 class="subhead">Print</h2>
+        </button>
+        <button data-filter="animation" class="link btn filter-button">
+            <h2 class="subhead">Animation</h2>
+        </button>
+        <button data-filter="events" class="link btn filter-button">
+            <h2 class="subhead">Events</h2>
+        </button>
+        <button data-filter="web" class="link btn filter-button">
+            <h2 class="subhead">Web</h2>
+        </button>
+        <button data-filter="video" class="link btn filter-button">
+            <h2 class="subhead">Video</h2>
+        </button>
+        </section>
+        <section class="row col-md-10 py-3 justify-content-center no-gutters  d-flex align-items-center">
+        <!-- emoji -->
+        <div class="col-4 px-1 my-1 filter visual" data-toggle="modal" data-target="#visualModal1">
+            <img src="assets/graphic-design/covers/visual-DJemoji-3.jpg" alt="emoji design" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="visual1" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/DJ-Color-1800x1800.png" alt="Man DJ Emoji">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/DJ-woman-color-1800.png" alt="Woman DJ Emoji">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#visual1" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#visual1" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Emoji Design</h1>
+                <p class="body">These emojis were made and submitted to unicode by Amelia Shuler and Rajdeep Junnarkar for approval in the 2021 release to mobile devices.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- NVIDIA Case Study -->  
+        <div class="col-4 px-1 my-1 filter print"  data-toggle="modal" data-target="#visualModal2">
+            <img src="assets/graphic-design/covers/print-3.jpg" alt="AUDREY Watches Out for First Responders, ebook print" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="print1" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-NVIDIA-2/NVIDIA-PDF_Page_1.jpg" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-NVIDIA-2/NVIDIA-PDF_Page_2.jpg" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-NVIDIA-2/NVIDIA-PDF_Page_3.jpg" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-NVIDIA-2/NVIDIA-PDF_Page_4.jpg" alt="Page 4">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#print1" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#print1" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">AI Case Study PDF</h1>
+                <p class="body">This Ebook was produced on behalf of clients NVIDIA, DELL, and GAI. Amelia made style choices to reflect the three separate brands, chose images, and created a custom illustration (page 3).</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- flatfit animation 1 -->
+        <div class="col-4 px-1 my-1 filter animation"  data-toggle="modal" data-target="#visualModal3">
+            <img src="assets/graphic-design/covers/animation-1.jpg" alt="Find someone to live with, social animation" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <img src="assets/graphic-design/animation-flatfit-1.gif" alt="find someone to live with animation" class="mw-100">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Flatfit Social Media Animation</h1>
+                <p class="body">This animation (in spanish: Find someone to live with) was created for Flatfit, a start up in Barcelona aimed at pairing roommates.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- viasat infographic -->   
+        <div class="col-4 px-1 my-1 filter print"  data-toggle="modal" data-target="#visualModal4">
+            <img src="assets/graphic-design/covers/print-5.jpg" alt="The State of Military Communications Across Today's Battlespace, infographic print" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <img src="assets/graphic-design/print-Viasat-Infographic-5.jpg" alt="Viasat infographic" class="mw-100">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Viasat Infographic</h1>
+                <p class="body">This infographic, produced on behalf of Viasat using paid-for market research, overviews the advancement of satellite use in military communication.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- photo, Bryan Thomas --> 
+        <div class="col-4 px-1 my-1 filter photo"  data-toggle="modal" data-target="#visualModal5">
+            <img src="assets/graphic-design/covers/photo-1.jpg" alt="Bryan Thomas, WWT. Photo." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="photo1" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Bryan Thomas-1/WWT-BryanThomas-1.JPG" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Bryan Thomas-1/WWT-BryanThomas-2.JPG" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Bryan Thomas-1/WWT-BryanThomas-3.JPG" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Bryan Thomas-1/WWT-BryanThomas-4.JPG" alt="Page 4">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#photo1" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#photo1" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Bryan Thomas</h1>
+                <p class="body">Bryan Thomas, Senior VP of Public Sector at WWT, was featured in Government Executive's Leadership Voices. As part of the team, I took the photos of our subjects.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- painting --> 
+        <div class="col-4 px-1 my-1 filter visual"  data-toggle="modal" data-target="#visualModal6">
+            <img src="assets/graphic-design/covers/visual-2.jpg" alt="Sunflower, acrylic paint on canvas. Visual." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <img src="assets/graphic-design/visual-painting-2.jpg" alt="Painting" class="mw-100">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Sunflower Painting</h1>
+                <p class="body">Acrylic painting on canvas, Sunflower painting.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- photo, Kate Zwaard -->   
+        <div class="col-4 px-1 my-1 filter photo"  data-toggle="modal" data-target="#visualModal7">
+            <img src="assets/graphic-design/covers/photo-4.jpg" alt="Library of Congress. Photo." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="photo2" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Kate Zwaard-3/LoC-KateZwaard-1.JPG" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Kate Zwaard-3/LoC-KateZwaard-2.JPG" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Kate Zwaard-3/LoC-KateZwaard-3.JPG" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Kate Zwaard-3/LoC-KateZwaard-4.JPG" alt="Page 4">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#photo2" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#photo2" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Kate Zwaard Photo</h1>
+                <p class="body">Kate Zwaard, Director of Digital Strategy at the Library of Congress, was featured in Government Executive's Leadership Voices. As part of the team, I took the photos of our subjects.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- Google event -->   
+        <div class="col-4 px-1 my-1 filter events" data-toggle="modal" data-target="#visualModal8">
+            <img src="assets/graphic-design/covers/eventdesign-1.jpg" alt="Innovation & Responsibility with Cloud AI, Google. Event Design" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <a href="https://www.govexec.com/feature/innovation-and-responsibility-with-cloud-ai/">
+                <img src="assets/graphic-design/eventdesign-google.jpg" alt="google cloud event" class="mw-100">
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Google Cloud</h1>
+                <p class="body">I created the branding for Google Cloud's Executive Luncheon in fall of 2018. I also produced the website (click on image) and physical branding.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- machinekind podcast -->
+        <div class="col-4 px-1 my-1 filter visual" data-toggle="modal" data-target="#visualModal9">
+            <img src="assets/graphic-design/covers/visual-1.jpg" alt="Machinekind Podcast Branding. Visual" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <a href="https://www.govexec.com/sponsors/machinekind-podcast/?oref=ge-podcasts">
+                <img src="assets/graphic-design/visual-MachinekindPodcast-1.jpg" alt="machinekind podcast" class="mw-100">
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">MachineKind Podcast</h1>
+                <p class="body">I developed the branding for MachineKind Podcast on behalf of DELL Technologies, NVIDIA, and GAI. I presented them with three options – one that is photo-heavy, one daring, and one in the middle. They chose this one and I created tiles for every episode.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- cybersmart animation -->   
+        <div class="col-4 px-1 my-1 filter animation" data-toggle="modal" data-target="#visualModal10">
+            <img src="assets/graphic-design/covers/animation-3.jpg" alt="Cyber background, animation." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal10" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <video autoPlay loop muted class="mw-100">
+                <source src="assets/graphic-design/animation-carahsoft-1.mp4" alt="Cybersmart animation" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Cybersmart Animation</h1>
+                <p class="body">Using Adobe After Effects, I created an animation for an event series called Cybersmart.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- chris townsend --> 
+        <div class="col-4 px-1 my-1 filter photo" data-toggle="modal" data-target="#visualModal11">
+            <img src="assets/graphic-design/covers/photo-3.jpg" alt="Photo." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal11" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="photo3" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Chris Townsend-2/Symantec-ChrisTownsend-1.JPG" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Chris Townsend-2/Symantec-ChrisTownsend-2.JPG" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Chris Townsend-2/Symantec-ChrisTownsend-3.JPG" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Chris Townsend-2/Symantec-ChrisTownsend-4.JPG" alt="Page 4">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#photo3" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#photo3" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Chris Townsend Photo</h1>
+                <p class="body">Chris Townsend, previous executive at Symantec, was intended to be featured in Government Executive's Leadership Voices. As part of the team, I took the photos of our subjects.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- ruckus infographic -->   
+        <div class="col-4 px-1 my-1 filter web" data-toggle="modal" data-target="#visualModal12">
+            <img src="assets/graphic-design/covers/webdesign-1.jpg" alt="Innovation Band Immersive Infographic, Web Design" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal12" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <a href="https://www.govexec.com/insights/what-is-cbrs/">
+                <img src="assets/graphic-design/covers/webdesign-1.jpg" alt="ruckus infographic" class="mw-100">
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Ruckus Immersive Infographic</h1>
+                <p class="body">I worked with researchers to create this immersive infographic on behalf of client Ruckus. It featured custom research, custom illustrations, and was built using Wordpress as a platform. Click the image left to see the whole site.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- flatfit 2 animation -->  
+        <div class="col-4 px-1 my-1 filter animation" data-toggle="modal" data-target="#visualModal13">
+            <img src="assets/graphic-design/covers/animation-2.jpg" alt="Create your perfect roommate today, social media animation." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal13" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <img src="assets/graphic-design/animation-flatfit-2.gif" alt="Flatfit Animation 2" class="mw-100">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Social Media Animation</h1>
+                <p class="body">This animation (in spanish: Brew up the perfect roommate) was created for Flatfit, a start up in Barcelona aimed at pairing roommates.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- Top Takeaways -->
+        <div class="col-4 px-1 my-1 filter print" data-toggle="modal" data-target="#visualModal14">
+            <img src="assets/graphic-design/covers/print-2.jpg" alt="Top Takeaways. Print Ebook." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal14" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="print2" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-Cisco-1/Cisco-PDF_Page_1.jpg" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-Cisco-1/Cisco-PDF_Page_2.jpg" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Cisco-1/Cisco-PDF_Page_3.jpg" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Cisco-1/Cisco-PDF_Page_4.jpg" alt="Page 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Cisco-1/Cisco-PDF_Page_5.jpg" alt="Page 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Cisco-1/Cisco-PDF_Page_6.jpg" alt="Page 4">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#print2" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#print2" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Top Takeaways: Cisco</h1>
+                <p class="body">This Top Takeaways PDF was produced on behalf of client Cisco. Amelia made style choices according to Cisco's branding, chose images, and developed the layout.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- nvidia event -->   
+        <div class="col-4 px-1 my-1 filter events" data-toggle="modal" data-target="#visualModal15">
+            <img src="assets/graphic-design/covers/eventdesign-2.jpg" alt="Expert Round Table Discussion, Event Design" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal15" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <a href="https://www.govexec.com/feature/data-centers-increase-agility/?oref=ge-events-archive">
+                <img src="assets/graphic-design/eventdesign-NVIDIAWebsite.jpg" alt="NVIDIA Event" class="mw-100">
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">NVIDIA Roundtable Event</h1>
+                <p class="body">Government Executive's online webcast for client NVIDIA. Amelia created the custom green logo and landing page. To see the whole site, click on image.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- product photo --> 
+        <div class="col-4 px-1 my-1 filter photo" data-toggle="modal" data-target="#visualModal16">
+            <img src="assets/graphic-design/covers/photo-2.jpg" alt="Machinekind Podcast Branding. Visual" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal16" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="photo4" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Wildflower-4/Product-1.jpg" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Photo-Wildflower-4/Product-2.jpg" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Wildflower-4/Product-3.jpg" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Photo-Wildflower-4/Product-4.jpg" alt="Page 4">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#photo4" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#photo4" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Product Photo</h1>
+                <p class="body">Product photography for Wildflower boutique. They provided the necklace, and I did the staging and photography.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- salesforce video --> 
+        <div class="col-4 px-1 my-1 filter video" data-toggle="modal" data-target="#visualModal17">
+            <img src="assets/graphic-design/covers/video-1.jpg" alt="Salesforce, SME Video." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal17" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <a href="https://www.govexec.com/sponsored/leadership-voices/salesforce/innovation-trust-and-engagement/">
+                <iframe src="https://www.youtube.com/embed/ayeXRMy5C5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="300px"></iframe>
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Salesforce Video</h1>
+                <p class="body">Casey Coleman, Senior VP Global Government Industry at Salesforce, was featured in Government Executive's Leadership Voices. As part of the team, I took the photos of our subjects, edited and cut together the video, and created the landing page.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- infographic nuestar -->   
+        <div class="col-4 px-1 my-1 filter print" data-toggle="modal" data-target="#visualModal18">
+            <img src="assets/graphic-design/covers/print-6.jpg" alt="Infographic, Print." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal18" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <img src="assets/graphic-design/print-Neustar-Infographic-4.jpg" alt="neustar infographic" class="mw-100">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Neustar Infographic</h1>
+                <p class="body">This infographic, produced on behalf of Neustar in-bound call authentication for custom service.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- splunk event -->
+        <div class="col-4 px-1 my-1 filter events" data-toggle="modal" data-target="#visualModal19">
+            <img src="assets/graphic-design/covers/eventdesign-3.jpg" alt="Event Design." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal19" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <a href="https://www.govexec.com/feature/splunk-webcast-real-time-it-monitoring/?oref=ge-events-archive">
+                <img src="assets/graphic-design/eventdesign-SplunkWebcast.jpg" alt="Splunk Event" class="mw-100">
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Splunk Webcast</h1>
+                <p class="body">Government Executive's online webcast for client Splunk. Amelia created the custom green logo and landing page. To see the whole site, click on image.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- panasonic -->
+        <div class="col-4 px-1 my-1 filter print" data-toggle="modal" data-target="#visualModal20">
+            <img src="assets/graphic-design/covers/print-4.jpg" alt="Ebook Print" class="mw-100 border-hero my-1 hover-cursor">
+        </div> 
+        <div class="modal fade normal-cursor" id="visualModal20" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="print3" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-Panasonic-3/Panasonic-PDF_Page_1.jpg" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-Panasonic-3/Panasonic-PDF_Page_2.jpg" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Panasonic-3/Panasonic-PDF_Page_3.jpg" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Panasonic-3/Panasonic-PDF_Page_4.jpg" alt="Page 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Panasonic-3/Panasonic-PDF_Page_5.jpg" alt="Page 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Panasonic-3/Panasonic-PDF_Page_6.jpg" alt="Page 6">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#print3" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#print3" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Panasonic PDF</h1>
+                <p class="body">This ebook was produced on behalf of client Panasonic. Amelia made style choices according to Panasonic's branding, chose images, and developed the layout.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- top 5 -->  
+        <div class="col-4 px-1 my-1 filter print" data-toggle="modal" data-target="#visualModal21">
+            <img src="assets/graphic-design/covers/print-1.jpg" alt="Ebook, Print" class="mw-100 border-hero hover-cursor">
+        </div>  
+        <div class="modal fade normal-cursor" id="visualModal21" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row py-5 align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <div id="print4" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-Workday-6/Workday-PDF_Page_1.jpg" alt="Page 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="assets/graphic-design/Print-Workday-6/Workday-PDF_Page_2.jpg" alt="Page 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Workday-6/Workday-PDF_Page_3.jpg" alt="Page 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Workday-6/Workday-PDF_Page_4.jpg" alt="Page 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Workday-6/Workday-PDF_Page_5.jpg" alt="Page 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/graphic-design/Print-Workday-6/Workday-PDF_Page_6.jpg" alt="Page 4">
+                    </div>
+                  </div>
+                <div class="row col-12 justify-content-center">
+                  <a href="#print4" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                  <a href="#print4" role="button" data-slide="next">
+                    <i class="fas fa-angle-right grey mx-3" style="font-size: 2em;"></i>
+                  </a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Top Takeaways: Cisco</h1>
+                <p class="body">This Top Takeaways PDF was produced on behalf of client Cisco. Amelia made style choices according to Cisco's branding, chose images, and developed the layout.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- salesforce video -->
+        <div class="col-4 px-1 my-1 filter video" data-toggle="modal" data-target="#visualModal22">
+            <img src="assets/graphic-design/covers/video-2.jpg" alt="Salesforce, SME Video." class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal22" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <a href="https://www.govexec.com/sponsored/leadership-voices/salesforce/right-tech-can-empower-government-change/">
+                <iframe src="https://youtu.be/LTSOD58C1uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="300px"></iframe>
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Salesforce Video</h1>
+                <p class="body">John DeVoe, Area VP of Aerospace and Government SI's at Salesforce, was featured in Government Executive's Leadership Voices. As part of the team, I took the photos of our subjects, edited and cut together the video, and created the landing page.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- animation video -->   
+        <div class="col-4 px-1 my-1 filter animation" data-toggle="modal" data-target="#visualModal23">
+            <img src="assets/graphic-design/covers/animation-4.jpg" alt="Video transition animations" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal23" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <video autoPlay loop muted class="mw-100">
+                <source src="assets/graphic-design/animation-lenovo-3.mp4" alt="Lenovo animation" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Lenovo Animations</h1>
+                <p class="body">Government Executive produced a series of videos for client, Lenovo. Using Adobe After Effects, I created animated lower thirds and intro slides.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- leadership voices page -->
+        <div class="col-4 px-1 my-1 filter web" data-toggle="modal" data-target="#visualModal23">
+            <img src="assets/graphic-design/covers/web-2.jpg" alt="leadership voices web design" class="mw-100 border-hero hover-cursor">
+        </div>
+        <div class="modal fade normal-cursor" id="visualModal24" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="bg-white modal-content normal-cursor border-0 align-items-center" style="border-radius: 0px;">
+            <div class="row col-12 justify-content-end pt-3">
+                <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times grey" style="font-size: 2em;"></i>
+                </button>
+            </div>
+            <div class="modal-body p-3 row align-items-center normal-cursor">
+            <div class="col-12 col-md-6">
+                <img src="assets/graphic-design/web-leadershipvoices-1.jpg" alt="leadership voices web design" class="mw-100">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="header">Leadership Voices</h1>
+                <p class="body">I created and edited templates in Wordpress for one of our leading products, Leadership Voices.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

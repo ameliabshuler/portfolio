@@ -104,6 +104,64 @@ background: linear-gradient(-25deg, #FFFFFF 40%, #FFC318 0%);
     background: linear-gradient(-25deg, #FFFFFF 60%, #FFC318 0%);
 }
 }
+/* visual home */
+.home-cover-3 {
+    top: 15%;
+    left: 10%;
+    position: fixed !important;
+}
+.home-cover-4 {
+    top: 45%;
+    left: 27%;
+    position: fixed !important;
+}
+.bg-home-visual {
+background: linear-gradient(-35deg, #FFFFFF 30%, #FFC318 0%);
+}
+/* responsive visual home */
+@media only screen and (max-width: 1080px) {
+ .home-cover-3 {
+    top: 15%;
+    left: 1%;
+    position: relative;
+}
+.home-cover-4 {
+    top: 30%;
+    left: 23%;
+    position: block;
+    word-wrap: normal;
+}
+.bg-home-visual {
+background: linear-gradient(-45deg, #FFFFFF 40%, #FFC318 0%);
+}   
+}
+/* visual work */
+button.link {
+    background-color:rgba(0,0,0,0.00);
+    border: none;
+    padding: 0 0 0 0 !important;
+    margin: none !important;
+}
+button.link:hover {
+    color: #EA961E;
+    text-decoration: none !important;
+}
+button.link:visited {
+    border: none;
+    box-shadow: none;
+    color: #EA961E;
+}
+button.link:focus {
+    border: none;
+    box-shadow: none;
+    color: #EA961E;
+}
+.hover-cursor:hover {
+    cursor: pointer;
+}
+.normal-cursor {
+    cursor: default !important;
+}
 /* resume */
 .line {
     border-right: thick solid #EA961E;
@@ -205,3 +263,4 @@ ul.timeline-list li:before {
 .modal-dialog {
  max-width: 80% !important;   
 }}
+/* no clue */
