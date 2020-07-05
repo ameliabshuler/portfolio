@@ -46,6 +46,12 @@ h2.subhead-small {
 .yellow-2 {
     color: #EA961E;
 }
+.caption {
+    font-family: 'futura-pt', Arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 90%;
+}
 /* universal responsive */
 @media only screen and (max-width: 576px) {
     h1.header, .header{
