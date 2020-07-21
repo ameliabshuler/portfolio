@@ -227,6 +227,7 @@ ul.timeline-list li:before {
 }
 .border-hero {
     border: thin solid #D8D8D7;
+    display: inline;
 }
 /* zoom modal */
 .zoom:hover {
