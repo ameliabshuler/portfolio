@@ -5,27 +5,27 @@ body {
     color: #3c3c3a;
 }
 h1.header, .header{
-    font-family: 'futura-pt', Arial, serif;
-    font-weight: 600;
+    font-family: 'utopia-std-subhead', Georgia, serif;
+    font-weight: 700;
     font-style: italic;
-    font-size: 160%;
+    font-size: 220%;
     display: flex;
 }
 h2.subhead, .subhead {
     font-family: 'futura-pt', Arial, sans-serif;
     font-weight: 600;
-    font-size: 160%;
+    font-size: 120%;
     display: flex;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-h2.subhead-small {
-    font-family: 'futura-pt', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 100%;
-    display: flex;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;  
+.title {
+	font-family: 'futura-pt', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 360%;
+	display: flex;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 .body {
     font-family: 'futura-pt', Arial, sans-serif;
@@ -41,16 +41,21 @@ h2.subhead-small {
     color: #3c3c3a;
 }
 .yellow-1 {
-    color: #FFC318;
+    color: #FFCE00;
 }
 .yellow-2 {
-    color: #EA961E;
+    color: #DC8B18;
 }
 .caption {
     font-family: 'futura-pt', Arial, sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 90%;
+}
+.border-bottom-1 {
+	border-bottom: medium solid #3c3c3a;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 /* universal responsive */
 @media only screen and (max-width: 576px) {
@@ -72,15 +77,19 @@ h2.subhead-small {
 }
 /* home page */
 .link {
-    color: #EA961E;
+    color: #3C3C3A;
     transform: all ease-in-out 2s;
 }
 .link:hover {
-    color: #3C3C3A;
+    color: #DC8B18;
     text-decoration: none !important;
 }
 a:hover {
     text-decoration: none !important;
+}
+.bottom-left {
+	bottom: 2%;
+	left: 2%;
 }
 .home-cover {
     top: 35%;
@@ -88,27 +97,30 @@ a:hover {
     position: fixed;
 }
 .bg-home {
-background: linear-gradient(45deg, #FFC318 60%, #FFFFFF 0%);
+background: linear-gradient(-45deg, #FFFFFF 40%, #FFE7A3 0%);
 }
 .bg-resume {
-background: linear-gradient(45deg, #FFC318 50%, #FFFFFF 0%);
+background: linear-gradient(-45deg, #FFFFFF 50%, #FFE7A3 0%);
+}
+.bg-text {
+	background: linear-gradient(0deg, #FFE7A3 50%, #FFFFFF 0%);
 }
 /* home page responsive tablet large */
 @media only screen and (max-width: 1080px) {
     .bg-home {
-background: linear-gradient(45deg, #FFC318 70%, #FFFFFF 0%);
+background: linear-gradient(-45deg, #FFFFFF 70%, #FFE7A3 0%);
 }
 }
 /* home page responsive tablet small*/
 @media only screen and (max-width: 768px) {
     .bg-home {
-background: linear-gradient(45deg, #FFC318 65%, #FFFFFF 0%);
+background: linear-gradient(-45deg, #FFFFFF 65%, #FFE7A3 0%);
 }
 }
 /* home page responsive iphone*/
 @media only screen and (max-width: 576px) {
     .bg-home {
-background: linear-gradient(45deg, #FFC318 55%, #FFFFFF 0%);
+background: linear-gradient(-45deg, #FFFFFF 55%, #FFE7A3 0%);
 }
 }
 /* visual work */
@@ -119,18 +131,18 @@ button.link {
     margin: none !important;
 }
 button.link:hover {
-    color: #EA961E;
+    color: #DC8B18;
     text-decoration: none !important;
 }
 button.link:visited {
     border: none;
     box-shadow: none;
-    color: #EA961E;
+    color: #DC8B18;
 }
 button.link:focus {
     border: none;
     box-shadow: none;
-    color: #EA961E;
+    color: #DC8B18;
 }
 .hover-cursor:hover {
     cursor: pointer;
@@ -140,7 +152,7 @@ button.link:focus {
 }
 /* resume */
 .line {
-    border-right: thick solid #EA961E;
+    border-right: thick solid #DC8B18;
 }
 ul.timeline-list {
 	position: relative;
@@ -152,7 +164,7 @@ ul.timeline-list:before {
 	content: "";
 	width: 6px;
 	height: 100%;
-	background-color: #EA961E;
+	background-color: #DC8B18;
 	left: 50%;
 	top: 0;
 	-webkit-transform: translateX(-50%);
@@ -177,7 +189,7 @@ ul.timeline-list li:before {
 	content: "";
 	width: 25px;
 	height: 25px;
-	background-color: #EA961E;
+	background-color: #DC8B18;
 	left: 50%;
 	top: 10%;
 	-webkit-transform: translate(-50%, -50%);
@@ -207,15 +219,18 @@ ul.timeline-list li:before {
 #uxResearch {
     visibility: hidden;
 }
+.callout {
+	border-left: medium solid #3c3c3a;
+}
 /* cummins */
 .divider {
     border-bottom: 2px #3c3c3a solid;
 }
 .bg-yellow-1 {
-    background-color: #FFC318;
+    background-color: #FFE7A3;
 }
 .bg-yellow-2 {
-    background-color: #EA961E;
+    background-color: #DC8B18;
 }
 .bg-grey {
     background-color: #D8D8D7;
