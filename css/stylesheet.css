@@ -5,27 +5,27 @@ body {
     color: #3c3c3a;
 }
 h1.header, .header{
-    font-family: 'utopia-std-subhead', Georgia, serif;
-    font-weight: 700;
+    font-family: 'futura-pt', Arial, serif;
+    font-weight: 600;
     font-style: italic;
-    font-size: 220%;
+    font-size: 160%;
     display: flex;
 }
 h2.subhead, .subhead {
     font-family: 'futura-pt', Arial, sans-serif;
     font-weight: 600;
-    font-size: 120%;
+    font-size: 160%;
     display: flex;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-.title {
-	font-family: 'futura-pt', Arial, sans-serif;
-	font-weight: 400;
-	font-size: 360%;
-	display: flex;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
+h2.subhead-small {
+    font-family: 'futura-pt', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    display: flex;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;  
 }
 .body {
     font-family: 'futura-pt', Arial, sans-serif;
@@ -41,21 +41,16 @@ h2.subhead, .subhead {
     color: #3c3c3a;
 }
 .yellow-1 {
-    color: #FFCE00;
+    color: #FFC318;
 }
 .yellow-2 {
-    color: #DC8B18;
+    color: #EA961E;
 }
 .caption {
     font-family: 'futura-pt', Arial, sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 90%;
-}
-.border-bottom-1 {
-	border-bottom: medium solid #3c3c3a;
-	margin-bottom: 30px;
-	margin-top: 30px;
 }
 /* universal responsive */
 @media only screen and (max-width: 576px) {
@@ -77,19 +72,15 @@ h2.subhead, .subhead {
 }
 /* home page */
 .link {
-    color: #3C3C3A;
+    color: #EA961E;
     transform: all ease-in-out 2s;
 }
 .link:hover {
-    color: #DC8B18;
+    color: #3C3C3A;
     text-decoration: none !important;
 }
 a:hover {
     text-decoration: none !important;
-}
-.bottom-left {
-	bottom: 2%;
-	left: 2%;
 }
 .home-cover {
     top: 35%;
@@ -97,30 +88,27 @@ a:hover {
     position: fixed;
 }
 .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 40%, #FFE7A3 0%);
+background: linear-gradient(45deg, #FFC318 60%, #FFFFFF 0%);
 }
 .bg-resume {
-background: linear-gradient(-45deg, #FFFFFF 50%, #FFE7A3 0%);
-}
-.bg-text {
-	background: linear-gradient(0deg, #FFE7A3 50%, #FFFFFF 0%);
+background: linear-gradient(45deg, #FFC318 50%, #FFFFFF 0%);
 }
 /* home page responsive tablet large */
 @media only screen and (max-width: 1080px) {
     .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 70%, #FFE7A3 0%);
+background: linear-gradient(45deg, #FFC318 70%, #FFFFFF 0%);
 }
 }
 /* home page responsive tablet small*/
 @media only screen and (max-width: 768px) {
     .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 65%, #FFE7A3 0%);
+background: linear-gradient(45deg, #FFC318 65%, #FFFFFF 0%);
 }
 }
 /* home page responsive iphone*/
 @media only screen and (max-width: 576px) {
     .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 55%, #FFE7A3 0%);
+background: linear-gradient(45deg, #FFC318 55%, #FFFFFF 0%);
 }
 }
 /* visual work */
@@ -131,18 +119,18 @@ button.link {
     margin: none !important;
 }
 button.link:hover {
-    color: #DC8B18;
+    color: #EA961E;
     text-decoration: none !important;
 }
 button.link:visited {
     border: none;
     box-shadow: none;
-    color: #DC8B18;
+    color: #EA961E;
 }
 button.link:focus {
     border: none;
     box-shadow: none;
-    color: #DC8B18;
+    color: #EA961E;
 }
 .hover-cursor:hover {
     cursor: pointer;
@@ -152,7 +140,7 @@ button.link:focus {
 }
 /* resume */
 .line {
-    border-right: thick solid #DC8B18;
+    border-right: thick solid #EA961E;
 }
 ul.timeline-list {
 	position: relative;
@@ -164,7 +152,7 @@ ul.timeline-list:before {
 	content: "";
 	width: 6px;
 	height: 100%;
-	background-color: #DC8B18;
+	background-color: #EA961E;
 	left: 50%;
 	top: 0;
 	-webkit-transform: translateX(-50%);
@@ -189,7 +177,7 @@ ul.timeline-list li:before {
 	content: "";
 	width: 25px;
 	height: 25px;
-	background-color: #DC8B18;
+	background-color: #EA961E;
 	left: 50%;
 	top: 10%;
 	-webkit-transform: translate(-50%, -50%);
@@ -219,18 +207,15 @@ ul.timeline-list li:before {
 #uxResearch {
     visibility: hidden;
 }
-.callout {
-	border-left: medium solid #3c3c3a;
-}
 /* cummins */
 .divider {
     border-bottom: 2px #3c3c3a solid;
 }
 .bg-yellow-1 {
-    background-color: #FFE7A3;
+    background-color: #FFC318;
 }
 .bg-yellow-2 {
-    background-color: #DC8B18;
+    background-color: #EA961E;
 }
 .bg-grey {
     background-color: #D8D8D7;
