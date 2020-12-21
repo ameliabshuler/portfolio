@@ -116,7 +116,7 @@ a:hover {
     position: fixed;
 }
 .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 40%, #FFE7A3 0%);
+background: linear-gradient(-45deg, #FFFFFF 50%, #FFE7A3 0%);
 }
 .bg-resume {
 background: linear-gradient(-45deg, #FFFFFF 50%, #FFE7A3 0%);
