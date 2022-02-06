@@ -5,35 +5,47 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    color: #3c3c3a;
+	color: #3c3c3a;
 }
-h1.header, .header{
-    font-family: 'utopia-std-subhead', Georgia, serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 220%;
-    display: flex;
+h1, h2 {
+    color: inherit;
+	font-family: inherit;
+	font-size: inherit;
 }
-h2.subhead, .subhead {
+.header {
     font-family: 'futura-pt', Arial, sans-serif;
     font-weight: 600;
-    font-size: 120%;
+    font-size: 300%;
     display: flex;
-    letter-spacing: 0.1em;
+    letter-spacing: .15em;
     text-transform: uppercase;
+	text-align: center;
+	color: #0F6722;
 }
-.title {
-	font-family: 'futura-pt', Arial, sans-serif;
-	font-weight: 400;
-	font-size: 360%;
-	display: flex;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
+.subhead-1 {
+	font-family: 'utopia-std-subhead', Georgia, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 200%;
+    display: flex;
 }
-.body {
+.subhead-2 {
+	font-family: 'utopia-std-subhead', Georgia, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 150%;
+    display: flex;
+}
+.body-1 {
     font-family: 'futura-pt', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 120%;
+    font-weight: 300;
+    font-size: 200%;
+    display: flex;
+}
+.body-2 {
+    font-family: 'futura-pt', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 150%;
     display: flex;
 }
 .bold {
@@ -49,16 +61,15 @@ h2.subhead, .subhead {
 .yellow-2 {
     color: #DC8B18;
 }
-.caption {
-    font-family: 'futura-pt', Arial, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 90%;
+.green {
+	color: #0F6722;
 }
-.border-bottom-1 {
-	border-bottom: medium solid #3c3c3a;
-	margin-bottom: 30px;
-	margin-top: 30px;
+.overline {
+    font-family: 'futura-pt', Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 100%;
+	letter-spacing: .15em;
 }
 /* universal responsive */
 @media only screen and (max-width: 576px) {
@@ -69,33 +80,42 @@ h2.subhead, .subhead {
     font-size: 120%;
     display: flex;
 }
-    h2.subhead, .subhead {
-    font-family: 'futura-pt', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 120%;
+.subhead-1 {
+	font-family: 'utopia-std-subhead', Georgia, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100%;
     display: flex;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 }
 /* home page */
 .link {
-    color: #3C3C3A;
+    color: #DC8B18;
     transform: all ease-in-out 2s;
+	font-family: 'futura-pt', Arial, sans-serif;
+	font-weight: 500;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	font-size: 150%;
 }
 .link:hover {
-    color: #DC8B18;
+    color: #3c3ca;
     text-decoration: none !important;
+	font-family: 'futura-pt', Arial, sans-serif;
+	font-weight: 500;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	font-size: 150%;
 }
 .btn-primary {
 	background-color: rgba(0,0,0,0.00);
 	border: solid medium #FFCE00;
 	color: #3c3c3a;
 	font-family: 'futura-pt', Arial, sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.1em;
     text-transform: uppercase;
-	font-size: 120%;
+	font-size: 150%;
 }
 .btn-primary:hover {
 	background-color: #FFCE00;
@@ -116,30 +136,30 @@ a:hover {
     position: fixed;
 }
 .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 50%, #FFE7A3 0%);
+background: linear-gradient(-45deg, #FFFFFF 50%, #FFFBEE 0%);
 }
 .bg-resume {
-background: linear-gradient(-45deg, #FFFFFF 50%, #FFE7A3 0%);
+background: linear-gradient(-45deg, #FFFFFF 50%, #FFFBEE 0%);
 }
 .bg-text {
-	background: linear-gradient(0deg, #FFE7A3 50%, #FFFFFF 0%);
+	background: linear-gradient(0deg, #FFFBEE 50%, #FFFFFF 0%);
 }
 /* home page responsive tablet large */
 @media only screen and (max-width: 1080px) {
     .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 70%, #FFE7A3 0%);
+background: linear-gradient(-45deg, #FFFFFF 70%, #FFFBEE 0%);
 }
 }
 /* home page responsive tablet small*/
 @media only screen and (max-width: 768px) {
     .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 65%, #FFE7A3 0%);
+background: linear-gradient(-45deg, #FFFFFF 65%, #FFFBEE 0%);
 }
 }
 /* home page responsive iphone*/
 @media only screen and (max-width: 576px) {
     .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 55%, #FFE7A3 0%);
+background: linear-gradient(-45deg, #FFFFFF 55%, #FFFBEE 0%);
 }
 }
 /* visual work */
