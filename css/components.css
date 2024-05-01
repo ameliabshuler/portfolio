@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/erq0xnx.css");
+/* universal */
+html {
+  scroll-behavior: smooth;
+}
+.margins {
+	padding-left: 72px;
+	padding-right: 72px;
+}
+.bg-green {
+	background-color: #34340C;
+}
+
+.bg-white {
+	background-color: white;
+}
+.nav-item-container:hover {
+	border-bottom: 3px white solid;
+	transition: 0.5s ease-in-out;
+}
+.nav-item {
+	color: white;
+	font-family: "Open Sans", san-serif;
+	font-weight: 700;
+	font-size: 100%;
+	text-align: center;
+}
+.name {
+	color: white;
+	font-family: "Open Sans", san-serif;
+	font-weight: 700;
+	font-size: 7vw;
+	text-transform: uppercase;
+	line-height: 100%;
+}
+.sub-text {
+	color: white;
+	font-family: "Open Sans", san-serif;
+	font-weight: 300;
+	font-size: 120%;
+}

@@ -5,72 +5,44 @@ html {
   scroll-behavior: smooth;
 }
 body {
-	color: #3c3c3a;
+	color: #000000;
 }
 h1, h2 {
     color: inherit;
 	font-family: inherit;
 	font-size: inherit;
 }
-.header {
-    font-family: 'futura-pt', Arial, sans-serif;
+h1 {
+	font-family: "Open Sans", Arial, sans-serif;
     font-weight: 600;
-    font-size: 300%;
-    display: flex;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-	text-align: center;
-	color: #0F6722;
-}
-.subhead-1 {
-	font-family: 'utopia-std-subhead', Georgia, serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 200%;
+    font-size: 375%;
     display: flex;
 }
-.subhead-2 {
-	font-family: 'utopia-std-subhead', Georgia, serif;
+h2 {
+	font-family: "Open Sans", Georgia, serif;
     font-weight: 700;
-    font-style: italic;
+    font-style: bold italic;
     font-size: 150%;
     display: flex;
 }
-.body-1 {
-    font-family: 'futura-pt', Arial, sans-serif;
-    font-weight: 300;
-    font-size: 200%;
+h3 {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 120%;
     display: flex;
 }
-.body-2 {
-    font-family: 'futura-pt', Arial, sans-serif;
-    font-weight: 300;
-    font-size: 150%;
-    display: flex;
-}
-.bold {
-    
-    font-weight: 700;
-}
-.grey {
-    color: #3c3c3a;
-}
-.yellow-1 {
-    color: #FFCE00;
-}
-.yellow-2 {
-    color: #DC8B18;
-}
-.green {
-	color: #0F6722;
-}
-.overline {
-    font-family: 'futura-pt', Arial, sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
+a {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
     font-size: 100%;
-	letter-spacing: .15em;
 }
+p {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+	margin-bottom: 0rem !important;
+}
+
 /* universal responsive */
 @media only screen and (max-width: 576px) {
     h1.header, .header{
@@ -80,161 +52,37 @@ h1, h2 {
     font-size: 120%;
     display: flex;
 }
-.subhead-1 {
-	font-family: 'utopia-std-subhead', Georgia, serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 100%;
-    display: flex;
-}
 }
 /* home page */
-.link {
-    color: #DC8B18;
-    transform: all ease-in-out 2s;
-	font-family: 'futura-pt', Arial, sans-serif;
-	font-weight: 500;
-	letter-spacing: .15em;
-	text-transform: uppercase;
-	font-size: 150%;
-}
-.link:hover {
-    color: #3c3ca;
-    text-decoration: none !important;
-	font-family: 'futura-pt', Arial, sans-serif;
-	font-weight: 500;
-	letter-spacing: .15em;
-	text-transform: uppercase;
-	font-size: 150%;
-}
 .btn-primary {
-	background-color: rgba(0,0,0,0.00);
-	border: solid medium #FFCE00;
+	background-color: #EEAE0D;
+	border-radius: 0 0 0 0;
+	border: none;
 	color: #3c3c3a;
-	font-family: 'futura-pt', Arial, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 700;
-	letter-spacing: 0.1em;
     text-transform: uppercase;
-	font-size: 150%;
+	font-size: 80%;
 }
 .btn-primary:hover {
-	background-color: #FFCE00;
-	border: solid medium #FFCE00;
+	opacity: 0.6;
+		background-color: #EEAE0D;
+	border-radius: 0 0 0 0;
+	border: none;
 	color: #3c3c3a;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 700;
+    text-transform: uppercase;
+	font-size: 80%;
+}
+.btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(238, 174, 13, 0.5);
 }
 a:hover {
     text-decoration: none !important;
 	color: inherit;
 }
-.bottom-left {
-	bottom: 2%;
-	left: 2%;
-}
-.home-cover {
-    top: 35%;
-    left: 5%;
-    position: fixed;
-}
-.bg-home {
-background: linear-gradient(-45deg, #FFFFFF 50%, #FFFBEE 0%);
-}
-.bg-resume {
-background: linear-gradient(-45deg, #FFFFFF 50%, #FFFBEE 0%);
-}
-.bg-text {
-	background: linear-gradient(0deg, #FFFBEE 50%, #FFFFFF 0%);
-}
-/* home page responsive tablet large */
-@media only screen and (max-width: 1080px) {
-    .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 70%, #FFFBEE 0%);
-}
-}
-/* home page responsive tablet small*/
-@media only screen and (max-width: 768px) {
-    .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 65%, #FFFBEE 0%);
-}
-}
-/* home page responsive iphone*/
-@media only screen and (max-width: 576px) {
-    .bg-home {
-background: linear-gradient(-45deg, #FFFFFF 55%, #FFFBEE 0%);
-}
-}
-/* visual work */
-button.link {
-    background-color:rgba(0,0,0,0.00);
-    border: none;
-    padding: 0 0 0 0 !important;
-    margin: none !important;
-}
-button.link:hover {
-    color: #DC8B18;
-    text-decoration: none !important;
-}
-button.link:visited {
-    border: none;
-    box-shadow: none;
-    color: #DC8B18;
-}
-button.link:focus {
-    border: none;
-    box-shadow: none;
-    color: #DC8B18;
-}
-.hover-cursor:hover {
-    cursor: pointer;
-}
-.normal-cursor {
-    cursor: default !important;
-}
-/* resume */
-.line {
-    border-right: thick solid #DC8B18;
-}
-ul.timeline-list {
-	position: relative;
-	margin: 0;
-	padding: 0
-}
-ul.timeline-list:before {
-	position: absolute;
-	content: "";
-	width: 6px;
-	height: 100%;
-	background-color: #DC8B18;
-	left: 50%;
-	top: 0;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
-}
-ul.timeline-list li {
-	position: relative;
-	clear: both;
-	display: table;
-}
-ul.timeline-list li .timeline_content {
-	width: 45%;
-	color: #3c3c3a;
-    float: left;
-}
-ul.timeline-list li:nth-child(2n) .timeline_content {
-	float: right;
-	text-align: left;
-}
-ul.timeline-list li:before {
-	position: absolute;
-	content: "";
-	width: 25px;
-	height: 25px;
-	background-color: #DC8B18;
-	left: 50%;
-	top: 10%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-	border-radius: 50%;
-}
+
 /*responsive resume*/
 @media only screen and (max-width: 1080px) {
      ul.timeline-list li .timeline_content {
@@ -246,20 +94,6 @@ ul.timeline-list li:before {
     ul.timeline-list:before {
      width: 0px;   
     }
-}
-/* case studies */
-.opacity {
-    opacity: 100%;
-    transition: all .5s ease-in-out;
-}
-.opacity:hover {
-    opacity: 50%;
-}
-#uxResearch {
-    visibility: hidden;
-}
-.callout {
-	border-left: medium solid #3c3c3a;
 }
 /* cummins */
 .divider {
@@ -274,15 +108,6 @@ ul.timeline-list li:before {
 .bg-grey {
     background-color: #D8D8D7;
   }
-.body-small {
-    font-family: arial, sansserif;
-    line-height: 16pt;
-    font-size: 11pt;
-}
-.border-hero {
-    border: thin solid #D8D8D7;
-    display: inline;
-}
 /* zoom modal */
 .zoom:hover {
     cursor: zoom-in;
@@ -295,3 +120,110 @@ ul.timeline-list li:before {
  max-width: 80% !important;   
 }}
 /* no clue */
+
+/* new */
+.nav-white {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 100%;
+    display: flex;
+	text-align: center;
+	border-bottom: 3px rgba(255, 255, 255, 0.0) solid;
+	color: white;
+}
+.nav-white:hover, .active-white {
+	border-bottom: 3px white solid;
+	transform: .5s ease-in-out;
+	color: white;
+}
+.nav-black {
+	color: black;
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 100%;
+    display: flex;
+	text-align: left;
+	border-bottom: 3px rgba(255, 255, 255, 0.0) solid;
+}
+.nav-black:hover, .active-yellow {
+	border-bottom: 3px #EEAE0D solid;
+	transform: .5s ease-in-out;
+	color: black;
+}
+.text-white {
+		color: white;
+}
+.bg-green {
+	background-color: #34340C;
+}
+
+.bg-white {
+	background-color: white;
+}
+.margins {
+	padding-left: 72px;
+	padding-right: 72px;
+}
+.name {
+	color: white;
+	font-family: "Open Sans", san-serif;
+	font-weight: 700;
+	font-size: 7vw;
+	text-transform: uppercase;
+	line-height: 100%;
+}
+.sub-text {
+	color: white;
+	font-family: "Open Sans", san-serif;
+	font-weight: 300;
+	font-size: 120%;
+}
+
+.page-header {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 200%;
+    display: flex;
+}
+.body {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+}
+.body-italic {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+	font-style: italic;
+}
+.card-border {
+	border: solid 1.5px #E7E7E7;
+}
+.divider {
+	border-bottom: 1px #E7E7E7 solid;
+}
+.chip-text {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 80%;
+    display: flex;
+	text-align: center;
+	border-bottom: 3px rgba(255, 255, 255, 0.0) solid;
+	color: #404040;
+}
+.chip-background {
+	background-color: #F2F2F2;
+	border-radius: 32px 32px 32px 32px;
+}
+.section-header {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 150%;
+    display: flex;
+}
+.border-black {
+	border: solid 1px black;
+}
+.snackbar-background {
+	background-color: #E7E7E7;
+}
