@@ -194,13 +194,30 @@ a:hover {
 .anchors {
 	font-family: "Open Sans", Arial, sans-serif;
     font-weight: 300;
+	letter-spacing: .1rem;
     font-size: 150%;
 	border-bottom: 4px rgba(0,0,0,0.0) solid;
 }
 .anchors:hover {
 	font-family: "Open Sans", Arial, sans-serif;
     font-weight: 300;
+	letter-spacing: .1rem;
     font-size: 150%;
+	border-bottom: 4px #EEAE0D solid;
+}
+
+.subanchors {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+	letter-spacing: .05rem;
+    font-size: 100%;
+	border-bottom: 4px rgba(0,0,0,0.0) solid;
+}
+.subanchors:hover {
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+	letter-spacing: .05rem;
+    font-size: 100%;
 	border-bottom: 4px #EEAE0D solid;
 }
 .eyebrow {
@@ -231,4 +248,39 @@ background-color: #EEAE0D;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 80%;
+}
+.sidebar {
+	display: flex;
+	flex: 0 0 48px;
+	max-width: 48px;
+	position: relative;
+	width: 100%;
+	background-color: #FFEA99;
+}
+.nav-circle {
+	background-color: #34340C;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+}
+.nav-circle-active {
+		background-color: #EEAE0D !important;
+}
+#myBtn {
+	display: none;
+	position: fixed; /* Fixed/sticky position */
+	top: 20px; /* Place the button at the bottom of the page */
+	left: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #FFFFFF80; /* Set a background color */
+ 	color: black; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: #FFEA99; /* Add a dark-grey background on hover */
 }

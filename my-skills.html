@@ -24,10 +24,11 @@
   gtag('js', new Date());
 
   gtag('config', 'G-695HJKF0CE');
-</script>
+	</script>
     
 <!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">	
+</script>
 
 <!--bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -40,8 +41,9 @@
 </script>
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="eyebrow font-weight-normal">&uarr; Back to Top</button>
 	<!-- header -->
-<section class="row justify-content-end align-items-center bg-green py-3 px-0 mx-0">
+<section class="flex-row d-flex flex-wrap justify-content-end align-items-center bg-green py-3 px-0 mx-0">
 	<div class="col-2 justify-content-center d-flex">
 		 <a href="index.html" class="nav-white justify-content-center pb-1">Home</a>
 	</div>
@@ -59,34 +61,126 @@
 	</div>
 </section>
 	<!-- main section -->
-<section class="d-flex flex-row justify-content-center py-5 bg-green align-items-center px-0 mx-0">
-	<div class="col-4 py-md-5 my-md-5 justify-content-center">
-		<div class="col-12 py-3">
-		<div class="d-flex">
-			<a href="#Visual"><p class="text-white anchors">Visual</p></a>
+<section class="d-flex flex-row py-5 bg-green align-items-center px-md-5 mcx-md-5 px-0 mx-0 min-vh-100 justify-content-center">
+	<div class="d-flex flex-row align-items-start">
+	<!-- design -->
+		<div class="px-md-5 mx-md-5">
+		<div class="px-0 mx-0 d-inline-flex">
+			<a href="#VizDesign"><p class="text-white anchors">Visual</p></a>
 		</div>
+		<ul class="px-0 mx-0">
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Visual"><p class="text-white subanchors">Logo</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#App"><p class="text-white subanchors">App</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Web"><p class="text-white subanchors">Web</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#System"><p class="text-white subanchors">Design Systems</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Interaction"><p class="text-white subanchors">Interaction</p></a>
+			</li>
+		</ul>
 		</div>
-		<div class="col-12 py-3">
-		<div class="d-flex">
+	<!-- research -->
+		<div class="px-md-5 mx-md-5">
+		<div class="px-0 mx-0 d-inline-flex">
 			<a href="#Research"><p class="text-white anchors">Research</p></a>
 		</div>
+		<ul class="px-0 mx-0">
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Research"><p class="text-white subanchors">Planning</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Activities"><p class="text-white subanchors">Activities</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Analysis"><p class="text-white subanchors">Analysis</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Deliverables"><p class="text-white subanchors">Deliverables</p></a>
+			</li>
+			</ul>
 		</div>
-		<div class="col-12 py-3">
-		<div class="d-flex">
+	<!-- strategy -->
+		<div class="px-md-5 mx-md-5">
+		<div class="px-0 mx-0 d-inline-flex">
 			<a href="#Strategy"><p class="text-white anchors">Strategy</p></a>
 		</div>
-		</div>
+	<ul class="px-0 mx-0">
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Strategy"><p class="text-white subanchors">Project Strategy &amp; Service Design</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Navigation"><p class="text-white subanchors">Navigation</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Functionality"><p class="text-white subanchors">Defining Core Product Functionality</p></a>
+			</li>
+			<li class="d-flex p-1 m-2 col-12">
+				<a href="#Constraints"><p class="text-white subanchors">Working within Existing Constraints</p></a>
+			</li>
+			</ul>
 	</div>
-	<div class="col-md-4 mb-3 justify-content-center my-5 py-5">
-			<!-- video -->
-		<video class="w-100" AutoPlay Loop Muted>
-		<source src="assets/Cover-Video.mp4" type="video/mp4">
-			Your browser does not support this video type.
-		</video>
 	</div>
 </section>
+	<!--
+	<div class="sidebar sticky-top py-3 min-vh-100 justify-content-center">
+		<div>
+		<a href="#Visual">
+		<div class="nav-circle mx-2 my-3 nav-circle-active position-sticky"></div>
+		</a>
+		<a href="#VizDesign">
+			<div class="nav-circle mx-2 my-3 position-sticky"></div>
+		</a>
+		<a href="#App">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#Web">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#System">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#Interaction">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#Research">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#Activities">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#Contact">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#Deliverables">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#Strategy">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		<a href="#">
+		<div class="nav-circle mx-2 my-3"></div>
+		</a>
+		</div>
+	</div>
+-->
 	<!-- logo design section -->
-<section class="d-flex flex-row flex-wrap align-items-center p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-between" id="Visual">
+<section class="d-inline-flex flex-row flex-wrap align-items-center p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-between" id="Visual">
 	<div class="col-md-4 align-items-center justify-content-start">
 		<p class="eyebrow">Visual</p>
 		<p class="page-header">Logo Design</p>
@@ -100,21 +194,21 @@
 	</div>
 </section>
 	<!-- visual design section -->
-<section class="d-flex align-items-center p-md-5 m-md-5 mt-5 mx-2 justify-content-between flex-md-row flex-wrap-reverse">
+<section class="d-flex align-items-center p-md-5 m-md-5 mt-5 mx-2 justify-content-between flex-md-row flex-wrap-reverse" id="vizDesign">
+	<div class="col-md-4 align-items-center justify-content-end">
+		<p class="eyebrow">Visual</p>
+		<p class="page-header">Visual Design</p>
+		<p class="body text-justify">Balancing a webpage is no easy task, but what is most important to a user can be prioritized using color, typography, size, distance, and shape.</p>
+	</div>
 	<div class="col-md-4 align-content-center m-md-0 my-3">
 		<img src="assets/skills/04-Branding-1.jpg" alt="Logo ideation process" class="card-border w-100">
 	</div>
 	<div class="col-md-4 align-content-center m-md-0 my-3">
 		<img src="assets/skills/05-Branding-2.jpg" alt="Logo ideation process" class="card-border w-100">
 	</div>
-	<div class="col-md-4 align-items-center justify-content-end">
-		<p class="eyebrow">Visual</p>
-		<p class="page-header">Visual Design</p>
-		<p class="body text-justify">Logos are usually the first thing a user sees and the last thing a user remembers. Therefore, a logo should represent the brand in an easy to understand way and be simple enough to reproduce on a variety of mediums.</p>
-	</div>
 </section>
 	<!-- app screen design section -->
-<section class="d-flex flex-row flex-wrap align-items-center p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-start">
+<section class="d-flex flex-row flex-wrap align-items-center p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-start" id="App">
 	<div class="row col-md-7 justify-content-start mb-3">
 		<div class="col-12">
 			<p class="eyebrow">Visual</p>
@@ -144,7 +238,7 @@
 	</div>
 </section>
 	<!-- web screen design section -->
-<section class="d-flex flex-row flex-wrap align-items-center p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-between">
+<section class="d-flex flex-row flex-wrap align-items-center p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-between" id="Web">
 	<div class="col-md-4 align-items-center justify-content-start mb-md-0 mb-3">
 		<p class="eyebrow">Visual</p>
 		<p class="page-header">Web Screen Design</p>
@@ -155,7 +249,12 @@
 	</div>
 </section>
 	<!-- design system section -->
-<section class="d-flex flex-md-row flex-wrap-reverse justify-content-between align-items-center p-md-5 m-md-5 mx-2 my-5 py-5">
+<section class="d-flex flex-md-row flex-wrap-reverse justify-content-between align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="System">
+	<div class="col-md-4 align-items-center mb-md-0 mb-3">
+		<p class="eyebrow">Visual</p>
+		<p class="page-header">Design Systems</p>
+		<p class="body text-justify">While designing from a blank canvas can be fun, it ends up being taxing for both the designer and the developer. When working long term on a project, I prefer to invest in creating a robust, reusable design system or relying on an open source design system.</p>
+	</div>
 	<div class="col-md-4 col-6 mb-md-0 mb-3">
 		<img src="assets/skills/13-DesignSystem-1.jpg" alt="Logo ideation process" class="card-border w-100 mb-3">
 		<img src="assets/skills/14-DesignSystem-2.jpg" alt="#" class="card-border w-100">
@@ -163,14 +262,9 @@
 	<div class="col-md-4 col-6 mb-md-0 mb-3">
 		<img src="assets/skills/15-DesignSystem-3.jpg" alt="Logo ideation process" class="card-border w-100">
 	</div>
-	<div class="col-md-4 align-items-center mb-md-0 mb-3">
-		<p class="eyebrow">Visual</p>
-		<p class="page-header">Design Systems</p>
-		<p class="body text-justify">While designing from a blank canvas can be fun, it ends up being taxing for both the designer and the developer. When working long term on a project, I prefer to invest in creating a robust, reusable design system or relying on an open source design system.</p>
-	</div>
 </section>
 	<!-- interaction design section -->
-<section class="d-flex flex-row flex-wrap justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5">
+<section class="d-flex flex-row flex-wrap justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="Interaction">
 	<div class="col-md-4 justify-content-between align-items-center mb-md-0 mb-3">
 		<p class="eyebrow">Visual</p>
 		<p class="page-header">Interaction Design</p>
@@ -214,20 +308,20 @@
 	</div>
 </section>
 	<!-- research activities section -->
-<section class="d-flex flex-row flex-wrap  justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5">
+<section class="d-flex flex-row flex-wrap  justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5" id="Activities">
 	<div class="col-12 mb-3">
 		<p class="eyebrow">Research</p>
 		<p class="page-header">Research Activities</p>
 	</div>
 	<div class="col-md-6 my-md-0 mb-5">
+		<img src="assets/skills/21-UsabilityTesting.jpg" alt="Logo ideation process" class="w-100 card-border mb-3">
 		<p class="body text-justify"><u>Usability Testing</u></p>
 		<p class="body text-justify mb-3">While I much prefer guided usability tests as they can be both generative and evaluative forms of research, if I am lacking time and resources I will conduct unguided usability tests.</p>
-		<img src="assets/skills/21-UsabilityTesting.jpg" alt="Logo ideation process" class="w-100 card-border">
 	</div>
 	<div class="col-md-6 my-md-0 my-5">
+		<img src="assets/skills/22-User Interviews.jpg" alt="Logo ideation process" class="w-100 card-border mb-3">
 		<p class="body text-justify"><u>User Interviews</u></p>
 		<p class="body text-justify mb-3">Early on in projects, or on projects that are more system-based than screen-based, user interviews can gather valuable insights around users’ attitudes, processes, or challenges.</p>
-		<img src="assets/skills/22-User Interviews.jpg" alt="Logo ideation process" class="w-100 card-border">
 	</div>
 	<div class="d-flex flex-row flex-md-wrap flex-wrap-reverse col-md-4 mt-md-3 align-items-start mb-md-0 my-5">
 		<img src="assets/skills/23-Contextual-Inquiries.jpg" alt="Logo ideation process" class="w-100 card-border mb-3">
@@ -252,7 +346,7 @@
 	</div>
 </section>
 	<!-- research analysis section -->
-<section class="d-flex flex-row flex-wrap justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5">
+<section class="d-flex flex-row flex-wrap justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5" id="Analysis">
 		<div class="col-12 mb-3">
 			<p class="eyebrow">Research</p>
 			<p class="page-header">Research Analysis</p>
@@ -280,7 +374,7 @@
 	</div>
 </section>
 	<!-- research deliverables section -->
-<section class="d-flex flex-row flex-wrap  align-items-start p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-center">
+<section class="d-flex flex-row flex-wrap  align-items-start p-md-5 m-md-5 mx-2 my-5 py-5 justify-content-center" id="Deliverables">
 	<div class="col-12 mb-3">
 		<p class="eyebrow">Research</p>
 		<p class="page-header">Research Deliverables</p>
@@ -323,7 +417,7 @@
 	</div>
 </section>
 	<!-- navigation section -->
-<section class="d-flex flex-row flex-wrap justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5">
+<section class="d-flex flex-row flex-wrap justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="Navigation">
 	<div class="col-md-4 align-items-center">
 		<p class="eyebrow">Strategy</p>
 		<p class="page-header">Navigation</p>
@@ -334,18 +428,18 @@
 	</div>
 </section>
 	<!-- Defining Core Product Functionality section -->
-<section class="d-flex flex-row flex-md-wrap flex-wrap-reverse justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5">
-	<div class="col-md-8 align-items-center">
-		<img src="assets/skills/34-Defining Core Product Functionality.jpg" alt="Logo ideation process" class="w-100 card-border">	
-	</div>
+<section class="d-flex flex-row flex-md-wrap flex-wrap-reverse justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="Functionality">
 	<div class="col-md-4 justify-content-around align-content-center mb-md-0 mb-3">
 		<p class="eyebrow">Strategy</p>
 		<p class="page-header">Defining Core Product Functionality</p>
 		<p class="body text-justify">Something that is assumed, but rarely expressed aloud is the core flows of a product. Not only can UX bring to light differing assumptions, but it can help document a core functionality understanding for everyone.</p>
 	</div>
+	<div class="col-md-8 align-items-center">
+		<img src="assets/skills/34-Defining Core Product Functionality.jpg" alt="Logo ideation process" class="w-100 card-border">	
+	</div>
 </section>
 	<!-- existing constraints section -->
-<section class="d-flex flex-row flex-wrap  justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5">
+<section class="d-flex flex-row flex-wrap  justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5" id="Constraints">
 	<div class="col-12 mb-3">
 		<p class="eyebrow">Strategy</p>
 		<p class="page-header">Working within Existing Constraints</p>
@@ -366,7 +460,7 @@
 	</div>
 </section>
 	<!-- contact me section -->
-<div class="bg-yellow py-5">
+<div class="bg-yellow py-5" id="Contact">
 	<!-- research planning section -->
 	<div class="d-flex flex-row flex-wrap  justify-content-between align-items-center px-md-5 mx-md-5 mx-3">
 	<div class="col-md-4">
@@ -385,5 +479,26 @@
 	</div>
 	</div> 
 </div>
+	<script>
+	// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 </body>
 </html>
