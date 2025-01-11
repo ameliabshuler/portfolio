@@ -62,13 +62,13 @@
 </section>
 	<!-- main section -->
 <section class="d-flex flex-row py-5 bg-green align-items-center px-md-5 mcx-md-5 px-0 mx-0 min-vh-100 justify-content-center">
-	<div class="d-flex flex-row align-items-start">
-	<!-- design -->
-		<div class="px-md-5 mx-md-5">
-		<div class="px-0 mx-0 d-inline-flex">
+	<div class="d-flex flex-row align-items-start flex-wrap">
+	<!-- design list-->
+		<div class="px-md-5 mx-md-5 d-flex flex-column px-5 mx-5">
+		<div class="px-0 mx-0 d-inline-flex py-sm-0 py-5">
 			<a href="#VizDesign"><p class="text-white anchors">Visual</p></a>
 		</div>
-		<ul class="px-0 mx-0">
+		<ul class="px-0 mx-0 d-md-inline d-none">
 			<li class="d-flex p-1 m-2 col-12">
 				<a href="#Visual"><p class="text-white subanchors">Logo</p></a>
 			</li>
@@ -87,11 +87,11 @@
 		</ul>
 		</div>
 	<!-- research -->
-		<div class="px-md-5 mx-md-5">
-		<div class="px-0 mx-0 d-inline-flex">
+		<div class="px-md-5 mx-md-5 d-flex flex-column px-5 mx-5">
+		<div class="px-0 mx-0 d-inline-flex py-sm-0 py-5">
 			<a href="#Research"><p class="text-white anchors">Research</p></a>
 		</div>
-		<ul class="px-0 mx-0">
+		<ul class="px-0 mx-0 d-md-inline d-none">
 			<li class="d-flex p-1 m-2 col-12">
 				<a href="#Research"><p class="text-white subanchors">Planning</p></a>
 			</li>
@@ -107,11 +107,11 @@
 			</ul>
 		</div>
 	<!-- strategy -->
-		<div class="px-md-5 mx-md-5">
+		<div class="px-md-5 mx-md-5 d-flex flex-column px-5 mx-5 py-sm-0 py-5">
 		<div class="px-0 mx-0 d-inline-flex">
 			<a href="#Strategy"><p class="text-white anchors">Strategy</p></a>
 		</div>
-	<ul class="px-0 mx-0">
+	<ul class="px-0 mx-0 d-md-inline d-none">
 			<li class="d-flex p-1 m-2 col-12">
 				<a href="#Strategy"><p class="text-white subanchors">Project Strategy &amp; Service Design</p></a>
 			</li>
@@ -194,7 +194,7 @@
 	</div>
 </section>
 	<!-- visual design section -->
-<section class="d-flex align-items-center p-md-5 m-md-5 mt-5 mx-2 justify-content-between flex-md-row flex-wrap-reverse" id="vizDesign">
+<section class="d-flex align-items-center p-md-5 m-md-5 mt-5 mx-2 justify-content-between flex-md-row flex-wrap" id="vizDesign">
 	<div class="col-md-4 align-items-center justify-content-end">
 		<p class="eyebrow">Visual</p>
 		<p class="page-header">Visual Design</p>
@@ -249,7 +249,7 @@
 	</div>
 </section>
 	<!-- design system section -->
-<section class="d-flex flex-md-row flex-wrap-reverse justify-content-between align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="System">
+<section class="d-flex flex-md-row flex-wrap justify-content-between align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="System">
 	<div class="col-md-4 align-items-center mb-md-0 mb-3">
 		<p class="eyebrow">Visual</p>
 		<p class="page-header">Design Systems</p>
@@ -308,20 +308,24 @@
 	</div>
 </section>
 	<!-- research activities section -->
-<section class="d-flex flex-row flex-wrap  justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5" id="Activities">
+<section class="d-flex flex-row flex-wrap justify-content-center align-items-start p-md-5 m-md-5 mx-2 my-5 py-5" id="Activities">
 	<div class="col-12 mb-3">
 		<p class="eyebrow">Research</p>
 		<p class="page-header">Research Activities</p>
 	</div>
-	<div class="col-md-6 my-md-0 mb-5">
+	<div class="d-flex flex-row flex-md-wrap flex-wrap-reverse col-md-4 mt-md-3 align-items-start mb-md-0 my-5">
 		<img src="assets/skills/21-UsabilityTesting.jpg" alt="Logo ideation process" class="w-100 card-border mb-3">
+		<div class="mb-md-0 mb-3">
 		<p class="body text-justify"><u>Usability Testing</u></p>
 		<p class="body text-justify mb-3">While I much prefer guided usability tests as they can be both generative and evaluative forms of research, if I am lacking time and resources I will conduct unguided usability tests.</p>
+		</div>
 	</div>
-	<div class="col-md-6 my-md-0 my-5">
+	<div class="d-flex flex-row flex-md-wrap flex-wrap-reverse col-md-4 mt-md-3 align-items-start mb-md-0 my-5">
 		<img src="assets/skills/22-User Interviews.jpg" alt="Logo ideation process" class="w-100 card-border mb-3">
+		<div class="mb-md-0 mb-3">
 		<p class="body text-justify"><u>User Interviews</u></p>
 		<p class="body text-justify mb-3">Early on in projects, or on projects that are more system-based than screen-based, user interviews can gather valuable insights around users’ attitudes, processes, or challenges.</p>
+		</div>
 	</div>
 	<div class="d-flex flex-row flex-md-wrap flex-wrap-reverse col-md-4 mt-md-3 align-items-start mb-md-0 my-5">
 		<img src="assets/skills/23-Contextual-Inquiries.jpg" alt="Logo ideation process" class="w-100 card-border mb-3">
@@ -428,7 +432,7 @@
 	</div>
 </section>
 	<!-- Defining Core Product Functionality section -->
-<section class="d-flex flex-row flex-md-wrap flex-wrap-reverse justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="Functionality">
+<section class="d-flex flex-row flex-md-wrap flex-wrap justify-content-center align-items-center p-md-5 m-md-5 mx-2 my-5 py-5" id="Functionality">
 	<div class="col-md-4 justify-content-around align-content-center mb-md-0 mb-3">
 		<p class="eyebrow">Strategy</p>
 		<p class="page-header">Defining Core Product Functionality</p>
