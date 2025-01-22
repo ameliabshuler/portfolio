@@ -17,6 +17,7 @@ h1 {
     font-weight: 600;
     font-size: 375%;
     display: flex;
+	letter-spacing: .2px;
 }
 h2 {
 	font-family: "Open Sans", Georgia, serif;
