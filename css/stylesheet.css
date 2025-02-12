@@ -289,3 +289,6 @@ background-color: #EEAE0D;
 	inset: auto 30px 20px auto;
 	}	
 }
+.case-study-img {
+	border-radius: 20px;
+}
